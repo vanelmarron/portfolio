@@ -1,0 +1,33 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+
+.tech-card {
+    display: flex;
+    position: relative;
+
+    &__image {
+        height: 3rem;
+
+        @include tablet {
+            height: 4rem;
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        z-index: 10;
+        inset: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__rectangle {
+        position: absolute;
+        background-color: black;
+        pointer-events: none;
+        opacity: 60%;
+        height: 100%;
+        width: 100%;
+    }
+}
