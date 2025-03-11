@@ -1,0 +1,47 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+
+.tech-stack {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    
+    &__wrapper {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+
+        &:hover {
+            animation-play-state: paused;
+            cursor: grab;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        width: max-content;
+        animation: scrollLeft 60s linear infinite;
+        transition: animation-play-state 2s ease-in-out;
+
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+}
+
+.dragging {
+    animation: none !important;
+  }
+
+@keyframes scrollLeft {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
