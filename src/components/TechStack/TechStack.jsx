@@ -1,4 +1,3 @@
-import { useRef, useState } from "react";
 import "./TechStack.scss"
 import TechCard from '../TechCard/TechCard';
 
@@ -25,6 +24,7 @@ const images = [
 function TechStack() {
   return (
     <section className="tech-stack">
+        <h2 className="tech-stack__title">My Toolbox</h2>
         <div className="tech-stack__wrapper">
       <ul className="tech-stack__list">
     {[...images, ...images, ...images, ...images].map((item, idx) => (
