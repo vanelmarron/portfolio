@@ -7,10 +7,10 @@
     position: relative;
 
     &__image {
-        height: 3rem;
+        height: 2rem;
 
         @include tablet {
-            height: 4rem;
+            height: 3rem;
         }
     }
 

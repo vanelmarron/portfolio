@@ -1,0 +1,72 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: $background-color;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+    max-width: 1216px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
+    @include tablet {
+        padding: 1rem 1.5rem;
+    }
+
+    @include desktop {
+        @include desktop-margin;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    &__name {
+        font-family: "Bebas";
+        letter-spacing: 0.2rem;
+        font-size: 1rem;
+
+        @include tablet {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__headshot {
+        height: 2rem;
+        border-radius: 50%
+    }
+
+    &__list {
+        @include flex-center;
+        gap: 1rem;
+    }
+
+    &__item {
+        @include flex-center;
+        gap: 0.5rem;
+    }
+
+    &__text {
+        display: none;
+
+        @include tablet {
+            display: contents;
+            font-family: "Bebas";
+            font-size: 1.25rem;
+        }
+    }
+
+    &__icon {
+        height: 1rem;
+    }
+
+}

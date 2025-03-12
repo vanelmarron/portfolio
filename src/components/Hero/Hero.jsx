@@ -1,22 +1,55 @@
 import "./Hero.scss";
-import portrait from "../../assets/images/headshot.jpg"
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useMotionValueEvent,
+} from "framer-motion";
+import { useRef } from "react";
 
 function Hero() {
+  const heroRef = useRef(null);
+  const { scrollY } = useScroll();
+
+  const rotateXOriginal = useTransform(scrollY, [0, 300], [0, 180]);
+  const opacityOriginal = useTransform(scrollY, [0, 300], [1, 0]);
+
+  const rotateXNew = useTransform(scrollY, [300, 600], [180, 360]);
+  const opacityNew = useTransform(scrollY, [300, 600], [0, 1]);
+
   return (
-    <section className="hero">
-      <h1 className="hero__title">Let’s turn ideas into code! </h1>
-      <div className="hero__wrapper">
+    <section className="hero" ref={heroRef}>
+      <div className="hero__title-container">
+        <motion.h1
+          className="hero__title"
+          style={{
+            rotateX: rotateXOriginal,
+            opacity: opacityOriginal,
+            position: "absolute",
+          }}
+        >
+          Hi, I'm Vanessa.
+        </motion.h1>
+        <motion.h1
+          className="hero__title"
+          style={{
+            rotateX: rotateXNew,
+            opacity: opacityNew,
+            position: "absolute",
+          }}
+        >
+          WEB DEVELOPER
+        </motion.h1>
+      </div>
       <div className="hero__content">
-      <p className="hero__text">
-        I'm Vanessa, a Software Engineer with a flair for UX Design and a strong foundation in marketing. I love combining creativity and technical skills to craft intuitive and engaging digital experiences. My toolbox includes HTML, CSS, JavaScript, Node.js, Express, and MySQL.
-      </p>
-      <p className="hero-__text">
-        Collaboration fuels my passion for innovation, and thrive in environments where shared leadership and accountability drive success. I believe in celebrating wins, learning from challenges, and lifting each other toward new heights.
-      </p>
-      </div>
-      <div className="hero__image">
-        <img className="hero__headshot" src={portrait} alt="Portrait of Vanessa Lebrun" />
-      </div>
+        <p className="hero__text">
+          I'm a web developer based in Vancouver, Beautiful British Columbia. I
+          build full-stack application that will help you bridge the gap between
+          your business and your customers.
+        </p>
+        <button className="hero__button">
+          Let’s turn your ideas into code!
+        </button>
       </div>
     </section>
   );

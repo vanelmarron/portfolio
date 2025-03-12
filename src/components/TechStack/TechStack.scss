@@ -4,8 +4,10 @@
 
 .tech-stack {
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem 0;
     
     &__wrapper {
         display: flex;
@@ -15,7 +17,6 @@
 
         &:hover {
             animation-play-state: paused;
-            cursor: grab;
         }
     }
 

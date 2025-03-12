@@ -1,0 +1,26 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    &__name {
+        margin-bottom: 1rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        @include tablet {
+            flex-direction: row; 
+            justify-content: space-between;
+        }
+    }
+}
+
