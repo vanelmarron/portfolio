@@ -1,15 +1,38 @@
 import "./Header.scss";
 
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
-import React from "react";
 import contactMe from "../../assets/icons/contact-me.svg";
 import interestIcon from "../../assets/icons/interests.svg";
 import projectsIcon from "../../assets/icons/projects.svg";
 import headshot from "../../assets/images/headshot-teal.png"
 
 function Header() {
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleProjectsClick = (event) => {
+    if (location.pathname !== "/") {
+      event.preventDefault();
+      navigate("/");
+        setTimeout(() => {
+          window.location.hash = "#projects";
+        }, 100)
+    }
+  }
+
+  const handleAboutClick = (event) => {
+    if (location.pathname !== "/") {
+      event.preventDefault();
+      navigate("/");
+      setTimeout(() => {
+        window.location.hash = "/about";
+      }, 100)
+    }
+  }
+
   return (
     <header className="header">
       <Link to="/">
@@ -19,7 +42,7 @@ function Header() {
       </div>
       </Link>
       <ul className="header__list">
-        <HashLink smooth to="#projects">
+        <HashLink smooth to="#projects" onClick={handleProjectsClick}>
         <li className="header__item">
           <img src={projectsIcon} alt="Projects" className="header__icon"/> 
           <p className="header__text">Projects</p>
