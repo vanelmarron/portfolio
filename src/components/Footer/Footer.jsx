@@ -1,4 +1,5 @@
 import "./Footer.scss"
+import { Link } from "react-router-dom";
 
 import linkedIn from "../../assets/icons/linkedin.svg";
 import gitHub from "../../assets/images/github.svg";
@@ -9,18 +10,24 @@ function Footer() {
     <footer className="footer">
         <p className="footer__rights">&copy; 2025. All rights reserved </p>
         <ul className="footer__contact">
+          <Link to="https://www.linkedin.com/in/vanessa-lebrun/">
             <li className="footer__item">
                 <img src={linkedIn} alt="LinkedIn" className="footer__icon"/>
                 <p className="footer__text">LinkedIn</p>
             </li>
+            </Link>
+            <Link to="https://github.com/vanelmarron">
             <li className="footer__item">
             <img src={gitHub} alt="GitHub" className="footer__icon"/>
             <p className="footer__text">GitHub</p>
             </li>
+            </Link>
+            <Link to="/contact">
             <li className="footer__item">
                 <img src={email} alt="Email" className="footer__icon" />
                 <p className="footer__text">Email</p>
             </li>
+            </Link>
         </ul>
       
     </footer>

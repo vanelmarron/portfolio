@@ -16,10 +16,6 @@
     &__title-container {
         display: flex;
         gap: 2rem;
-
-        @include tablet {
-            // top: 60%;
-        }
     }
 
     &__content {

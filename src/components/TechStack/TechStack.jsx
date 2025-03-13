@@ -1,5 +1,7 @@
 import "./TechStack.scss"
 import TechCard from '../TechCard/TechCard';
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 import reactLogo from "../../assets/images/react.svg";
 import javascriptLogo from "../../assets/images/js.svg";
@@ -22,8 +24,17 @@ const images = [
 ]
 
 function TechStack() {
+
+  const sectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "0.20 start"]
+  });
+
+  const opacity = useTransform(scrollYProgress, [0,1], [1, 0]);
+
   return (
-    <section className="tech-stack">
+    <motion.section className="tech-stack" ref={sectionRef} style={{opacity}}>
         <h2 className="tech-stack__title">My Toolbox</h2>
         <div className="tech-stack__wrapper">
       <ul className="tech-stack__list">
@@ -32,7 +43,7 @@ function TechStack() {
     ))}
       </ul>
       </div>
-    </section>
+    </motion.section>
   )
 }
 
