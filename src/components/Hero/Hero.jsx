@@ -3,9 +3,9 @@ import {
   motion,
   useScroll,
   useTransform,
-  useMotionValueEvent,
 } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 function Hero() {
   const heroRef = useRef(null);
@@ -47,9 +47,11 @@ function Hero() {
           build full-stack application that will help you bridge the gap between
           your business and your customers.
         </p>
+        <Link to="/contact">
         <button className="hero__button">
           Let’s turn your ideas into code!
         </button>
+        </Link>
       </div>
     </section>
   );

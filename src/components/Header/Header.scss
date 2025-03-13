@@ -27,13 +27,15 @@
     &__logo {
         display: flex;
         align-items: center;
-        gap: 0.4rem;
+        gap: 0.75rem;
     }
 
     &__name {
         font-family: "Bebas";
         letter-spacing: 0.2rem;
         font-size: 1rem;
+        text-decoration: none;
+        color: $text-color;
 
         @include tablet {
             font-size: 1.25rem;
@@ -47,12 +49,13 @@
 
     &__list {
         @include flex-center;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     &__item {
         @include flex-center;
         gap: 0.5rem;
+        cursor: pointer;
     }
 
     &__text {
@@ -62,6 +65,7 @@
             display: contents;
             font-family: "Bebas";
             font-size: 1.25rem;
+            color: $text-color;
         }
     }
 

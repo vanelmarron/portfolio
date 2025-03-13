@@ -1,0 +1,54 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    padding: 1rem;
+    gap: 1rem;
+
+    @include tablet {
+        padding: 1rem 1.5rem;
+    }
+
+    @include desktop {
+        @include desktop-margin;
+    }
+
+    &__address {
+        font-family: "Bebas";
+        letter-spacing: 0.27rem;
+        color: $primary-color;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    &__label {
+        text-transform: uppercase;
+    }
+
+    &__input {
+        border: 1px solid $primary-color;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+    }
+
+    &__textarea {
+        height: 20rem;
+        border: 1px solid $primary-color;
+        border-radius: 5px;
+        resize: none;
+    }
+
+    &__button {
+        width: 20rem;
+    }
+}
