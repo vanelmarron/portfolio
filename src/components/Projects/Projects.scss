@@ -11,16 +11,5 @@
     &__name {
         margin-bottom: 1rem;
     }
-
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-
-        @include tablet {
-            flex-direction: row; 
-            justify-content: space-between;
-        }
-    }
 }
 
