@@ -43,7 +43,8 @@ function Hero() {
       </div>
       <div className="hero__content">
         <p className="hero__text">
-          I'm a web developer based in Vancouver, Beautiful British Columbia. I
+          I'm a web developer based in Vancouver, Beautiful British Columbia. 
+          </p><p className="hero__text">I
           build full-stack application that will help you bridge the gap between
           your business and your customers.
         </p>

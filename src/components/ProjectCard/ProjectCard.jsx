@@ -1,86 +1,108 @@
 import "./ProjectCard.scss";
-import { useState } from 'react';
+import { useState } from "react";
 import { motion } from "framer-motion";
 
-import tumblingGoat from "../../assets/images/tumbling-goat.png";
-import inStock from "../../assets/images/instock.png";
-import tumblingLogo from "../../assets/logos/tumbling_logo.png";
-import instockLogo from "../../assets/logos/instock_logo.svg";
+import tumblingGoat from "../../assets/images/tumbling-goat.svg";
+import inStock from "../../assets/images/instock.svg";
+import bandsite from "../../assets/images/bandsite.svg";
+import tumblingDetails from "../../assets/images/tumbling-details.svg";
+import bandsiteDetails from "../../assets/images/bandsite-details.svg";
+import instockDetails from "../../assets/images/instock-details.svg"
+import forwardArrow from "../../assets/icons/forward.svg";
+import backwardArrow from "../../assets/icons/backward.svg";
+import hoverForward from "../../assets/icons/forward-hover.svg";
+import hoverBackward from "../../assets/icons/backward-hover.svg";
 
 const projects = [
   {
-    image: tumblingGoat,
-    logo: tumblingLogo,
-    title: "Bandsite",
-    description: "Website for a music band.",
-    stack: "TechStack: HTML, SCSS, JavaScript, Node.js, and React.js.",
-    api: "APIs: Node.js Express",
+    image: bandsite,
+    details: bandsiteDetails,
+    // title: "Marketing",
+    // description: "A fully responsive website for a music band, featuring media-rich content, dynamic events, and an interactive fan engagement section.",
+    // stack: "TechStack: HTML, SCSS, JavaScript",
+    // skills: "Teamwork, UI/UX Design, Responsive Web Development, JavaScript DOM Manipulation, API Integration, Version Control (Git/GitHub).",
   },
   {
     image: tumblingGoat,
-    logo: tumblingLogo,
-    title: "E-Commerce",
-    description:
-      "The app empowers artists to focus on their craft while reaching a broader, more engaged audience.",
-    stack: "TechStack: HTML, SCSS, JavaScript, Node.js, and React.js.",
-    api: "APIs: Node.js Express, Google API",
+    details: tumblingDetails,
+    // logo: tumblingLogo,
+    // title: "E-Commerce",
+    // description:
+    // "An e-commerce platform that empowers artists by providing a seamless marketplace to sell their work, while integrating powerful search and recommendation features.",
+    // stack: "TechStack: HTML, SCSS, JavaScript, Node.js, and React.js, MySQL",
+    // api: "APIs: Node.js Express, Google API",
+    // skills: "Full-Stack Development, RESTful API Integration, Authentication & Authorization, User-Centered Design, Problem-Solving."
   },
   {
     image: inStock,
-    logo: instockLogo,
-    title: "Inventory & Warehouse Management",
-    description:
-      "An Inventory Management App that helps businesses manage their stock using CRUD operations.",
-    stack: "TechStack: HTML, SCSS, JavaScript, Node.js, and React.js.",
-    api: "APIs: Node.js Express",
-  },
+    details: instockDetails,
+    // logo: instockLogo,
+    // title: "Inventory & Warehouse Management",
+    // description:
+    //   "An Inventory Management App designed to streamline stock tracking and warehouse operations through intuitive UI and CRUD functionalities.",
+    // stack: "TechStack: HTML, SCSS, JavaScript, Node.js, and React.js.",
+    // api: "APIs: Node.js Express",
+    // skills: "Collaboration, Version Control (Git/GitHub), Database Management (MySQL), CRUD Operations, API Development, Agile Development."
+  }
 ];
 
-
 function ProjectCard() {
-
   const [activeIndex, setActiveIndex] = useState(1);
+  const [isHoveredForward, setIsHoveredForward] = useState(false);
+  const [isHoveredBackward, setIsHoveredBackward] = useState(false);
 
-  const handleClick = (index) => {
-    setActiveIndex(index);
-  }
+  const nextProject = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % projects.length);
+  };
+
+  const prevProject = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? projects.length - 1 : prevIndex - 1
+    );
+  };
 
   return (
     <div className="projects__wrapper">
-      
-      {projects.map((project, index) => { 
-        const position = index - activeIndex;
-
-        return ( 
-          <motion.div
-          key={index}
-          className="project-item"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{
-            x: `${position * 30}%`, 
-            opacity: position === 0 ? 1 : 0.5, 
-            scale: position === 0 ? 1 : 0.60, 
-          }}
-          transition={{ type: "spring", stiffness: 250, damping: 20, mass: 0.8 }}
-          onClick={() => handleClick(index)}
-          style={{
-            zIndex: position === 0 ? 2 : 1,
-          }}
-        >
-          <img src={project.image} alt={project.title} className="project-item__image" />
-          <div className="project-item__details">
-            <img className="project-item__logo" src={project.logo} alt={project.title} />
-            <h3 className="project-item__title">{project.title}</h3>
-            <p className="project-item__description">{project.description}</p>
-            <p className="project-item__stack">{project.stack}</p>
-            <p className="project-item__api">{project.api}</p>
-            <button className="project-item__button">Learn More</button>
-          </div>
-        </motion.div>
-      );
-    })}
-  </div>
-);
+      <img
+        src={isHoveredBackward ? hoverBackward : backwardArrow}
+        alt="Previous Project"
+        className="project-item__back-arrow"
+        onClick={prevProject}
+        onMouseEnter={() => setIsHoveredBackward(true)}
+        onMouseLeave={() => setIsHoveredBackward(false)}
+      />
+      <motion.div
+        key={activeIndex}
+        className="project-item"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ type: "spring", stiffness: 200, damping: 20 }}
+      >
+        <img
+          src={projects[activeIndex].image}
+          alt={projects[activeIndex].title}
+          className="project-item__image"
+        />
+        <div className="project-item__details">
+          <img
+            className="project-item__logo"
+            src={projects[activeIndex].details}
+            alt={projects[activeIndex].title}
+          />
+          <button className="project-item__button">Learn More</button> 
+        </div>
+      </motion.div>
+      <img
+        src={isHoveredForward ? hoverForward : forwardArrow }
+        alt="Next Project"
+        className="project-item__forward-arrow"
+        onClick={nextProject}
+        onMouseEnter={() => setIsHoveredForward(true)}
+        onMouseLeave={() => setIsHoveredForward(false)}
+      />
+    </div>
+  );
 }
 
-export default ProjectCard
+export default ProjectCard;
