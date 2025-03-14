@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 import tumblingGoat from "../../assets/images/tumbling-goat.svg";
 import inStock from "../../assets/images/instock.svg";
 import bandsite from "../../assets/images/bandsite.svg";
-import tumblingLogo from "../../assets/logos/tumbling_logo.png";
-import instockLogo from "../../assets/logos/instock_logo.svg";
+import tumblingDetails from "../../assets/images/tumbling-details.svg";
+import bandsiteDetails from "../../assets/images/bandsite-details.svg";
+import instockDetails from "../../assets/images/instock-details.svg"
 import forwardArrow from "../../assets/icons/forward.svg";
 import backwardArrow from "../../assets/icons/backward.svg";
 import hoverForward from "../../assets/icons/forward-hover.svg";
@@ -15,30 +16,34 @@ import hoverBackward from "../../assets/icons/backward-hover.svg";
 const projects = [
   {
     image: bandsite,
-    logo: tumblingLogo,
-    title: "Bandsite",
-    description: "Website for a music band.",
-    stack: "TechStack: HTML, SCSS, JavaScript, Node.js, and React.js.",
-    api: "APIs: Node.js Express",
+    details: bandsiteDetails,
+    // title: "Marketing",
+    // description: "A fully responsive website for a music band, featuring media-rich content, dynamic events, and an interactive fan engagement section.",
+    // stack: "TechStack: HTML, SCSS, JavaScript",
+    // skills: "Teamwork, UI/UX Design, Responsive Web Development, JavaScript DOM Manipulation, API Integration, Version Control (Git/GitHub).",
   },
   {
     image: tumblingGoat,
-    logo: tumblingLogo,
-    title: "E-Commerce",
-    description:
-      "The app empowers artists to focus on their craft while reaching a broader, more engaged audience.",
-    stack: "TechStack: HTML, SCSS, JavaScript, Node.js, and React.js.",
-    api: "APIs: Node.js Express, Google API",
+    details: tumblingDetails,
+    // logo: tumblingLogo,
+    // title: "E-Commerce",
+    // description:
+    // "An e-commerce platform that empowers artists by providing a seamless marketplace to sell their work, while integrating powerful search and recommendation features.",
+    // stack: "TechStack: HTML, SCSS, JavaScript, Node.js, and React.js, MySQL",
+    // api: "APIs: Node.js Express, Google API",
+    // skills: "Full-Stack Development, RESTful API Integration, Authentication & Authorization, User-Centered Design, Problem-Solving."
   },
   {
     image: inStock,
-    logo: instockLogo,
-    title: "Inventory & Warehouse Management",
-    description:
-      "An Inventory Management App that helps businesses manage their stock using CRUD operations.",
-    stack: "TechStack: HTML, SCSS, JavaScript, Node.js, and React.js.",
-    api: "APIs: Node.js Express",
-  },
+    details: instockDetails,
+    // logo: instockLogo,
+    // title: "Inventory & Warehouse Management",
+    // description:
+    //   "An Inventory Management App designed to streamline stock tracking and warehouse operations through intuitive UI and CRUD functionalities.",
+    // stack: "TechStack: HTML, SCSS, JavaScript, Node.js, and React.js.",
+    // api: "APIs: Node.js Express",
+    // skills: "Collaboration, Version Control (Git/GitHub), Database Management (MySQL), CRUD Operations, API Development, Agile Development."
+  }
 ];
 
 function ProjectCard() {
@@ -69,9 +74,9 @@ function ProjectCard() {
       <motion.div
         key={activeIndex}
         className="project-item"
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -50 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
         transition={{ type: "spring", stiffness: 200, damping: 20 }}
       >
         <img
@@ -82,16 +87,10 @@ function ProjectCard() {
         <div className="project-item__details">
           <img
             className="project-item__logo"
-            src={projects[activeIndex].logo}
+            src={projects[activeIndex].details}
             alt={projects[activeIndex].title}
           />
-          <h3 className="project-item__title">{projects[activeIndex].title}</h3>
-          <p className="project-item__description">
-            {projects[activeIndex].description}
-          </p>
-          <p className="project-item__stack">{projects[activeIndex].stack}</p>
-          <p className="project-item__api">{projects[activeIndex].api}</p>
-          <button className="project-item__button">Learn More</button>
+          <button className="project-item__button">Learn More</button> 
         </div>
       </motion.div>
       <img
