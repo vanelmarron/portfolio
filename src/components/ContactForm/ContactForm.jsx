@@ -47,6 +47,7 @@ function ContactForm() {
           name="name"
           id="name"
           className="contact-form__input"
+          required
         />
         <label htmlFor="email" className="contact-form__label">
           Your Email
@@ -56,6 +57,7 @@ function ContactForm() {
           name="email"
           id="email"
           className="contact-form__input"
+          required
         />
         <label htmlFor="phone" className="contact-form__label">
           Your Phone Number
@@ -65,6 +67,7 @@ function ContactForm() {
           name="phone"
           id="phone"
           className="contact-form__input"
+          required
         />
         <label htmlFor="message" className="contact-form__label">
           Message
@@ -73,6 +76,7 @@ function ContactForm() {
           name="message"
           id="message"
           className="contact-form__textarea"
+          required
         ></textarea>
         <button type="submit" className="contact-form__button" value="Send">
           SEND
