@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 import linkedIn from "../../assets/icons/linkedin.svg";
 import gitHub from "../../assets/images/github.svg";
-import email from "../../assets/icons/contact-me.svg"
+import email from "../../assets/icons/contact-me.svg";
+import resume from "../../assets/icons/about-me.svg";
 
 function Footer() {
   return (
@@ -28,6 +29,10 @@ function Footer() {
                 <p className="footer__text">Email</p>
             </li>
             </Link>
+            <li className="footer__item">
+              <img src={resume} alt="Resume" className="footer__icon"/>
+              <p className="footer__text">Resume</p>
+            </li>
         </ul>
       
     </footer>

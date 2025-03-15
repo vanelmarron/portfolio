@@ -28,7 +28,7 @@ function Header() {
       event.preventDefault();
       navigate("/");
       setTimeout(() => {
-        window.location.hash = "/about";
+        window.location.hash = "#about";
       }, 100)
     }
   }
@@ -48,11 +48,12 @@ function Header() {
           <p className="header__text">Projects</p>
         </li>
         </HashLink>
-        
+        <HashLink smooth to="#about" onClick={handleAboutClick}>
         <li className="header__item">
           <img src={interestIcon} alt="About Me" className="header__icon"/> 
           <p className="header__text">About Me</p>
         </li>
+        </HashLink>
         <Link to="/contact">
         <li className="header__item">
           <img src={contactMe} alt="Contact" className="header__icon"/> 
