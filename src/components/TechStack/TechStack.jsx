@@ -28,7 +28,7 @@ function TechStack() {
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start end", "0.20 start"]
+    offset: ["start end", "0.10 start"]
   });
 
   const opacity = useTransform(scrollYProgress, [0,1], [1, 0]);
