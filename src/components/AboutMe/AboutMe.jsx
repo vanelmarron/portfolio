@@ -4,6 +4,8 @@ import { useState } from "react";
 import openIcon from "../../assets/icons/open.svg";
 import collapseIcon from "../../assets/icons/collapse.svg";
 
+import PhotoCarousel from "../PhotoCarousel/PhotoCarousel";
+
 function AboutMe() {
   const [activeIndex, setActiveIndex] = useState(null);
   
@@ -26,6 +28,8 @@ function AboutMe() {
             </li>
           ))}
         </ul>
+
+        <PhotoCarousel />
     </section>
   );
 }
