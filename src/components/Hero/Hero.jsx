@@ -45,7 +45,7 @@ function Hero() {
         <p className="hero__text">
           I'm a web developer based in Vancouver, Beautiful British Columbia. 
           </p><p className="hero__text">I
-          build full-stack application that will help you bridge the gap between
+          build full-stack applications that will help you bridge the gap between
           your business and your customers.
         </p>
         <Link to="/contact">
