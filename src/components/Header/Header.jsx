@@ -41,6 +41,7 @@ function Header() {
       <p className="header__name">VANESSA LEBRUN</p>
       </div>
       </Link>
+      <nav className="header__nav">
       <ul className="header__list">
         <HashLink smooth to="#projects" onClick={handleProjectsClick}>
         <li className="header__item">
@@ -61,6 +62,7 @@ function Header() {
         </li>
         </Link>
       </ul>
+      </nav>
     </header>
   );
 }

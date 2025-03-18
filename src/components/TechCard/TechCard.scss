@@ -13,21 +13,4 @@
             height: 3rem;
         }
     }
-
-    &__overlay {
-        position: absolute;
-        z-index: 10;
-        inset: 0;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__rectangle {
-        position: absolute;
-        background-color: black;
-        pointer-events: none;
-        opacity: 60%;
-        height: 100%;
-        width: 100%;
-    }
 }
