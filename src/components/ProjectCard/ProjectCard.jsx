@@ -1,6 +1,9 @@
 import "./ProjectCard.scss";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import ReactModal from "react-modal";
+ReactModal.setAppElement("#root");
+
 import ProjectDescription from "../ProjectDescription/ProjectDescription";
 
 import tumblingGoat from "../../assets/images/tumbling-goat.svg";
@@ -64,10 +67,6 @@ function ProjectCard() {
           <motion.div
             key={project.id}
             className="project-item__front"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ type: "spring", stiffness: 200, damping: 20 }}
             onClick={() => setActiveProject(project)}
           >
             <img
@@ -78,7 +77,16 @@ function ProjectCard() {
           </motion.div>
         </li>
       ))}
-     {activeProject && <ProjectDescription key={activeProject.id} project={activeProject} />}
+    <ReactModal
+        isOpen={!!activeProject} 
+        onRequestClose={() => setActiveProject(null)}
+        className="project-modal"
+        overlayClassName="project-modal__overlay"
+      >
+        {activeProject && (
+          <ProjectDescription project={activeProject} onClose={() => setActiveProject(null)} />
+        )}
+      </ReactModal>
     </>
   );
 }
