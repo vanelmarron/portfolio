@@ -11,13 +11,13 @@ function Footer() {
     <footer className="footer">
         <p className="footer__rights">&copy; 2025. All rights reserved </p>
         <ul className="footer__contact">
-          <Link to="https://www.linkedin.com/in/vanessa-lebrun/">
+          <Link to="https://www.linkedin.com/in/vanessa-lebrun/" target="_blank">
             <li className="footer__item">
                 <img src={linkedIn} alt="LinkedIn" className="footer__icon"/>
                 <p className="footer__text">LinkedIn</p>
             </li>
             </Link>
-            <Link to="https://github.com/vanelmarron">
+            <Link to="https://github.com/vanelmarron" target="_blank">
             <li className="footer__item">
             <img src={gitHub} alt="GitHub" className="footer__icon"/>
             <p className="footer__text">GitHub</p>
