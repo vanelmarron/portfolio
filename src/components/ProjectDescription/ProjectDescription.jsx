@@ -4,7 +4,7 @@ import React from 'react'
 import highlightIcon from "../../assets/icons/highlight.svg";
 import techIcon from "../../assets/icons/stack.svg";
 
-function ProjectDescription({ project }) {
+function ProjectDescription({ project, onClose }) {
   return (
     <div className="active-project">
         <h2 className="active-project__title">{project.name}</h2>
@@ -23,7 +23,7 @@ function ProjectDescription({ project }) {
         </div>
       </div>
         <div className="active-project__cta active-project__cta--tablet">
-        <button className="active-project__close">Close</button>
+        <button className="active-project__close" onClick={onClose}>Close</button>
         <button className="active-project__demo">{project.cta}</button>
       </div>
         </div>
