@@ -1,17 +1,28 @@
 import "./AboutMe.scss";
 import { Link } from "react-router-dom";
+import { useState, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 import PhotoCarousel from "../PhotoCarousel/PhotoCarousel";
 import codingApproach from "../../assets/images/coding-approach.png";
+import githubIcon from "../../assets/images/github.svg";
 
 function AboutMe() {
+
+  const [hover, setHover] = useState(false);
+  const aboutRef = useRef(null);
+  const isInView = useInView(aboutRef, { amount: 0.4, once: true });
+
   return (
-    <section className="about" id="about">
-      <div className="about__intro">
+    <motion.section className="about" id="about" ref={aboutRef}>
+      <motion.div className="about__intro">
         <h2 className="about__title">About Me</h2>
-      </div>
+      </motion.div>
       <div className="about__description">
-        <div className="about__list" >
+        <motion.div className="about__list" initial={{ x: -100, opacity: 0 }}
+          animate={isInView ? { x: 0, opacity: 1 } : {}}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          >
           <div className="about__sublist">
             <div className="about__item">
               <p className="about__item--bold">5+ Years</p>
@@ -32,8 +43,10 @@ function AboutMe() {
               <p className="about__item--reg">FR | EN</p>
             </div>
           </div>
-        </div>
-        <div className="about__details">
+        </motion.div>
+        <motion.div className="about__details" initial={{ x: 100, opacity: 0 }}
+          animate={isInView ? { x: 0, opacity: 1 } : {}}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}>
           <h3 className="about__tagline">
             Crafting Beautiful, Responsive, and Purposeful Designs
           </h3>
@@ -47,15 +60,32 @@ function AboutMe() {
             bring creativity and attention to detail to every project, ensuring
             the final product truly reflects my clients' vision.
           </p>
-        </div>
+        </motion.div>
       </div>
-      <Link to="https://github.com/vanelmarron" target="_blank">
-      <div className="about__approach-wrapper">
-      <img className="about__approach" src={codingApproach} alt="Coding Approach" />
-      </div>
-      </Link>
+      <motion.div
+        className="about__approach-wrapper"
+        initial={{ x: -100, opacity: 0 }}
+        animate={isInView ? { x: 0, opacity: 1 } : {}}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+      >
+        <img
+          className="about__approach"
+          src={codingApproach}
+          alt="Coding Approach"
+        />
+        {hover && (
+          <Link to="https://github.com/vanelmarron" target="_blank">
+          <div className="about__github">
+              <p className="about__github-text">Visit my GitHub</p>
+              <img className="about__github-icon" src={githubIcon} alt="GitHub Icon" />
+          </div>
+          </Link>
+        )}
+      </motion.div>
       <PhotoCarousel />
-    </section>
+    </motion.section>
   );
 }
 
