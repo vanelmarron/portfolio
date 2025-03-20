@@ -1,5 +1,5 @@
 import "./ProjectDescription.scss"
-import React from 'react'
+import { Link } from 'react-router-dom';
 
 import highlightIcon from "../../assets/icons/highlight.svg";
 import techIcon from "../../assets/icons/stack.svg";
@@ -24,7 +24,9 @@ function ProjectDescription({ project, onClose }) {
       </div>
         <div className="active-project__cta active-project__cta--tablet">
         <button className="active-project__close" onClick={onClose}>Close</button>
+        <Link to={project.url} target="_blank">
         <button className="active-project__demo">{project.cta}</button>
+        </Link>
       </div>
         </div>
         <img className="active-project__image active-project__image--tablet" src={project.details} alt={project.name} />
@@ -33,8 +35,10 @@ function ProjectDescription({ project, onClose }) {
      
       <img className="active-project__image active-project__image--mobile" src={project.details} alt={project.name} />
       <div className="active-project__cta active-project__cta--mobile">
-        <button className="active-project__close">Close</button>
-        <button className="active-project__demo">Demo</button>
+        <button className="active-project__close" onClick={onClose}>Close</button>
+        <Link to={project.url} target="_blank">
+        <button className="active-project__demo">{project.cta}</button>
+        </Link>
       </div>
     </div>
   )

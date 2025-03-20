@@ -11,11 +11,11 @@ function Hero() {
   const heroRef = useRef(null);
   const { scrollY } = useScroll();
 
-  const rotateXOriginal = useTransform(scrollY, [0, 300], [0, 180]);
-  const opacityOriginal = useTransform(scrollY, [0, 300], [1, 0]);
+  const rotateXOriginal = useTransform(scrollY, [0, 175], [0, 180]);
+  const opacityOriginal = useTransform(scrollY, [0, 175], [1, 0]);
 
-  const rotateXNew = useTransform(scrollY, [300, 600], [180, 360]);
-  const opacityNew = useTransform(scrollY, [300, 600], [0, 1]);
+  const rotateXNew = useTransform(scrollY, [150, 300], [180, 360]);
+  const opacityNew = useTransform(scrollY, [150, 300], [0, 1]);
 
   return (
     <section className="hero" ref={heroRef}>
@@ -45,7 +45,7 @@ function Hero() {
         <p className="hero__text">
           I'm a web developer based in Vancouver, Beautiful British Columbia. 
           </p><p className="hero__text">I
-          build full-stack applications that will help you bridge the gap between
+          build full-stack applications and websites that will help you bridge the gap between
           your business and your customers.
         </p>
         <Link to="/contact">

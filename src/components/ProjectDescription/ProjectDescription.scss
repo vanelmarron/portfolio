@@ -4,6 +4,7 @@
 
 .active-project {
   width: 80%;
+  max-width: 1216px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -27,13 +28,14 @@
   }
 
   &__image {
-    width: 100%;
+    width: 80%;
     margin: auto;
     border-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
     border: 1px solid $secondary-color;
 
     &--mobile {
+      margin-top: 1rem;
         @include tablet {
             display: none;
         }
@@ -44,8 +46,8 @@
 
         @include tablet {
             display: flex;
-            width: 50%;
-            margin: 1rem;
+            width: 40%;
+            margin: 0 1rem;
         }
     }
   }
@@ -96,6 +98,14 @@
             justify-content: flex-start;
         }
     }
+  }
+
+  &__close {
+    background-color: $text-color;
+
+  &:hover {
+    background-color: darken($text-color, 10%);
+  }
   }
 }
 
