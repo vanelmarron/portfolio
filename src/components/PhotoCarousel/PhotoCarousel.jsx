@@ -39,7 +39,7 @@ const images = [
 ];
 
 function PhotoCarousel() {
-    const [activeIndex, setActiveIndex] = useState(2); 
+    const [activeIndex, setActiveIndex] = useState(3); 
 
   const handleClick = (index) => {
     setActiveIndex(index);
@@ -65,7 +65,7 @@ function PhotoCarousel() {
               className="carousel__image"
               initial={{ scale: 1, opacity: 0.5 }}
               animate={{ scale, opacity, x: translateX }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0 }}
               onClick={() => handleClick(index)}
               style={{ zIndex }}
             />

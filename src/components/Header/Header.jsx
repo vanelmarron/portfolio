@@ -6,6 +6,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import contactMe from "../../assets/icons/contact-me.svg";
 import interestIcon from "../../assets/icons/interests.svg";
 import projectsIcon from "../../assets/icons/projects.svg";
+import resumeIcon from "../../assets/icons/about-me.svg";
 import headshot from "../../assets/images/headshot-teal.png"
 
 function Header() {
@@ -59,6 +60,12 @@ function Header() {
         <li className="header__item">
           <img src={contactMe} alt="Contact" className="header__icon"/> 
           <p className="header__text">Contact</p>
+        </li>
+        </Link>
+        <Link to="/resume">
+        <li className="header__item">
+          <img src={resumeIcon} alt="Resume" className="header__icon"/> 
+          <p className="header__text">Resume</p>
         </li>
         </Link>
       </ul>

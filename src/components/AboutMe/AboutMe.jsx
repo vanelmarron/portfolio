@@ -1,10 +1,8 @@
 import "./AboutMe.scss";
-import { useState } from "react";
-
-import openIcon from "../../assets/icons/open.svg";
-import collapseIcon from "../../assets/icons/collapse.svg";
+import { Link } from "react-router-dom";
 
 import PhotoCarousel from "../PhotoCarousel/PhotoCarousel";
+import codingApproach from "../../assets/images/coding-approach.png";
 
 function AboutMe() {
   return (
@@ -13,7 +11,7 @@ function AboutMe() {
         <h2 className="about__title">About Me</h2>
       </div>
       <div className="about__description">
-        <div className="about__list">
+        <div className="about__list" >
           <div className="about__sublist">
             <div className="about__item">
               <p className="about__item--bold">5+ Years</p>
@@ -31,7 +29,7 @@ function AboutMe() {
             </div>
             <div className="about__item">
               <p className="about__item--bold">Bilingual</p>
-              <p className="about__item--reg">French & English</p>
+              <p className="about__item--reg">FR | EN</p>
             </div>
           </div>
         </div>
@@ -41,14 +39,21 @@ function AboutMe() {
           </h3>
           <p className="about__coding">
             I'm an active and outdoorsy person who has recently discovered a
-            passion for coding. To me, it's a form of art—one that I use to
-            craft visually appealing, responsive, and user-friendly digital
-            experiences. I bring creativity and attention to detail to every
-            project, ensuring the final product truly reflects my clients'
-            vision.
+            passion for coding.{" "}
+          </p>
+          <p className="about__coding">
+            To me, it's a form of art—one that I use to craft visually
+            appealing, responsive, and user-friendly digital experiences. I
+            bring creativity and attention to detail to every project, ensuring
+            the final product truly reflects my clients' vision.
           </p>
         </div>
       </div>
+      <Link to="https://github.com/vanelmarron" target="_blank">
+      <div className="about__approach-wrapper">
+      <img className="about__approach" src={codingApproach} alt="Coding Approach" />
+      </div>
+      </Link>
       <PhotoCarousel />
     </section>
   );

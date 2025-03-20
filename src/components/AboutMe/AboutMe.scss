@@ -7,7 +7,7 @@
   justify-content: space-between;
   flex-direction: column;
   margin-top: 2rem;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
 
   &__description {
@@ -42,6 +42,10 @@
     border-radius: 0.5rem;
     background-color: darken($background-color, 2%);
 
+    &:hover {
+      background-color: darken($background-color, 3%);
+    }
+
     @include desktop {
         padding: 1.5rem 1rem;
     }
@@ -62,12 +66,16 @@
 
   &__details {
     padding: 1rem;
-    margin: 1rem 0;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     background-color: darken($background-color, 2%);
     border-radius: 0.5rem;
+
+    &:hover {
+      background-color: darken($background-color, 3%);
+    }
 
     @include desktop {
         margin: 2rem 0 0 0;
@@ -84,5 +92,21 @@
 
   &__coding {
     @include body-small;
+  }
+
+  &__approach-wrapper {
+    background-color: #0f2b36;
+    padding: 1rem 5rem;
+    border-radius: 0.5rem;
+  }
+
+  &__approach {
+    display: none;
+
+    @include tablet {
+      @include flex-center;
+      width: 100%;
+      cursor: pointer;
+    }
   }
 }

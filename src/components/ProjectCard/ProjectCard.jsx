@@ -19,7 +19,7 @@ const projects = [
     image: bandsite,
     details: bandsiteDetails,
     name: "Bandsite",
-    url: "bandsite",
+    url: "https://drive.google.com/file/d/1GKP7JrQAiZ3U_qR1ricPlBDNiiWJHSdN/view?usp=sharing",
     title: "Marketing & Promotion",
     description:
       "A fully responsive website for a music band, featuring media-rich content, dynamic events, and an interactive fan engagement section.",
@@ -46,7 +46,7 @@ const projects = [
     image: inStock,
     details: instockDetails,
     name: "InStock",
-    url: "instock",
+    url: "https://drive.google.com/file/d/1ANg1c8j8DgIymswkjoDPM0BJWgNb9mpz/view?usp=sharing",
     title: "Inventory Management System",
     description:
       "An Inventory Management App designed to streamline stock tracking and warehouse operations through intuitive UI and CRUD functionalities.",

@@ -6,9 +6,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 90vh;
+    min-height: 90vh;
     padding: 1rem;
     gap: 1rem;
+    position: relative;
+    top: 4rem;
 
     @include tablet {
         padding: 1rem 1.5rem;
@@ -42,7 +44,7 @@
     }
 
     &__textarea {
-        height: 20rem;
+        height: 15rem;
         border: 1px solid $primary-color;
         border-radius: 5px;
         resize: none;
@@ -50,5 +52,6 @@
 
     &__button {
         width: 20rem;
+        margin-bottom: 2rem;
     }
 }
