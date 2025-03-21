@@ -21,7 +21,7 @@
   }
 
   &__list {
-    margin-top: 5rem;
+    margin-top: 3rem;
     display: flex;
     width: 100%;
     gap: 1rem;
@@ -80,7 +80,7 @@
     }
 
     @include desktop {
-      margin: 5rem 0 0 0;
+      margin: 3rem 0 0 0;
     }
   }
 

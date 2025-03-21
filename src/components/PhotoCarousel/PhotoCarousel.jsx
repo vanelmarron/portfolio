@@ -1,5 +1,5 @@
 import "./PhotoCarousel.scss";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 import Photo1 from "../../assets/about-me/1.svg";
@@ -18,7 +18,6 @@ import Photo13 from "../../assets/about-me/13.svg";
 import Photo14 from "../../assets/about-me/14.svg";
 import Photo15 from "../../assets/about-me/15.svg";
 import Photo16 from "../../assets/about-me/16.svg";
-import { section } from "framer-motion/client";
 
 const images = [
   Photo1,
@@ -46,12 +45,23 @@ function PhotoCarousel() {
     setActiveIndex(index);
   };
 
+  const handleDragEnd = (event, info) => {
+    const threshold = 50; 
+    if (info.offset.x < -threshold) {
+      setActiveIndex((prev) => (prev + 1) % images.length);
+    } else if (info.offset.x > threshold) {
+      setActiveIndex((prev) => (prev - 1 + images.length) % images.length);
+    }
+  };
+
   return (
     <section className="nutshell"> 
       <h2 className="nutshell__title">When I'm not coding... </h2>
       <p className="nutshell__description">A picture is worth a thousand words. </p> 
     <div className="carousel">
-      <div className="carousel__track">
+      <motion.div className="carousel__track" drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          onDragEnd={handleDragEnd} >
         {images.map((src, index) => {
           const distance = (index - activeIndex + images.length) % images.length;
           const wrappedDistance = distance > images.length / 2 ? distance - images.length : distance;
@@ -75,7 +85,7 @@ function PhotoCarousel() {
             />
           );
         })}
-      </div>
+      </motion.div>
     </div>
     </section>
   );
