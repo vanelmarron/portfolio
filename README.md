@@ -1,6 +1,6 @@
 # Welcome to my portfolio
 
-Welcome to my portfolio! This is a showcase of my work as a Software Engineer with a background in UX Design and Marketing. My goal is to build engaging, user-friendly, and high-performing digital experiences.
+Welcome to my portfolio! This is a showcase of my work as a Web Developer with a background in Sales and Marketing. My goal is to build engaging, user-friendly, and high-performing digital experiences.
 
 ## Features
 
