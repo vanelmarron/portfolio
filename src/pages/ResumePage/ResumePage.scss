@@ -18,6 +18,27 @@
         @include desktop-margin;
     }
 
+    &__title-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        gap: 1rem;
+    }
+
+    &__download-icon {
+        position: relative;
+        top: 0.5rem;
+
+        @include tablet {
+            width: 2rem;
+            top: 0.25rem;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+}
+
     &__title {
         margin-bottom: 2rem;
 
@@ -28,6 +49,7 @@
 
     &__nav {
         display: flex;
+        align-items: flex-end;
         margin-top: 2rem;
     }
 
@@ -35,28 +57,16 @@
         @include body-typo;
         text-transform: uppercase;
         padding: 0.5rem 2rem;
-        border-left: 1px solid $primary-color;
-        border-top: 1px solid $primary-color ;
-
-        &:first-child {
-            border-top-left-radius: 0.5rem;
-        }
-
-        &:last-child {
-            border-right: 1px solid $primary-color;
-            border-top-right-radius: 0.5rem;
-        }
 
         &:hover {
-            color: $primary-color;
+            color: darken($primary-color, 10%);
             cursor: pointer;
         }
 
         &--active {
-            background-color: darken($background-color, 4%);
+            text-decoration: underline;
             color: darken($primary-color, 10%);
             font-weight: 700;
         }
     }
-    
 }

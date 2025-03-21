@@ -1,31 +1,55 @@
-import "./ResumePage.scss"
+import "./ResumePage.scss";
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import Experience from "../../components/Experience/Experience";
 import Education from "../../components/Education/Education";
+import downloadIcon from "../../assets/icons/download.svg";
 
 function ResumePage() {
-
-    const [activeTab, setActiveTab] = useState("experience");
+  const [activeTab, setActiveTab] = useState("experience");
 
   return (
     <main className="resume">
+      <div className="resume__title-wrapper">
         <h1 className="resume__title">Resume</h1>
+        <Link
+          to="https://drive.google.com/file/d/1Y8-UEmFT_-Mho6_ePL8eIZX4zE6xTmMy/view?usp=sharing"
+          target="blank"
+        >
+      
+            <img
+              src={downloadIcon}
+              alt="Download"
+              className="resume__download-icon"
+            />
+  
+        </Link>
+      </div>
+
       <ul className="resume__nav">
-        <li className={`resume__nav-item ${
+        <li
+          className={`resume__nav-item ${
             activeTab === "experience" ? "resume__nav-item--active" : ""
           }`}
-          onClick={() => setActiveTab("experience")}>Experience</li>
-        <li className={`resume__nav-item ${
+          onClick={() => setActiveTab("experience")}
+        >
+          Experience
+        </li>
+        <li
+          className={`resume__nav-item ${
             activeTab === "education" ? "resume__nav-item--active" : ""
           }`}
-          onClick={() => setActiveTab("education")}>Education</li>
+          onClick={() => setActiveTab("education")}
+        >
+          Education
+        </li>
       </ul>
       {activeTab === "experience" && <Experience />}
       {activeTab === "education" && <Education />}
     </main>
-  )
+  );
 }
 
-export default ResumePage
+export default ResumePage;
