@@ -3,35 +3,37 @@
 @use "../../styles/partials/typography.scss" as *;
 
 .education {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  box-shadow: $box-shadow;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+
+  &__position {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 3rem 2rem;
-    // border: 1px solid $primary-color;
-    // border-top-right-radius: 0.5rem;
-    // border-bottom-right-radius: 0.5rem;
-    // border-bottom-left-radius: 0.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(221, 239, 224, 0.2);
+  }
 
-    &__position {
-        display: flex;
-        flex-direction: column;
+  &__role {
+    color: $primary-color;
+  }
+
+  &__timeframe {
+    margin-bottom: 1rem;
+  }
+
+  &__achievements {
+    list-style-type: disc;
+    padding-left: 1rem;
+    width: 100%;
+
+    @include tablet {
+      width: 80%;
+      padding-left: 4rem;
     }
-
-    &__role {
-        color: $primary-color;
-    }
-
-    &__timeframe {
-        margin-bottom: 1rem;
-    }
-
-    &__achievements {
-        list-style-type: disc;
-        padding-left: 4rem;
-        width: 100%;
-
-        @include tablet {
-            width: 80%;
-        }
-    }
+  }
 }

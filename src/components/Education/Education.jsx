@@ -7,20 +7,18 @@ function Education() {
   return (
     <section className="education">
       <article className="education__position">
-        <h2 className="education__role">Software Engineering Bootcamp | BrainStation</h2>
-        <h3 className="education__timeframe">NOV 2024 - FEB 2025, VANCOUVER, BC</h3>
+        <h2 className="education__role">Software Engineering Bootcamp</h2>
+        <h3>BrainStation</h3>
+        <h4 className="education__timeframe">NOV 2024 - FEB 2025, VANCOUVER, BC</h4>
         <ul className="education__achievements">
           <li className="education__item">
           Gained a strong foundation in computer science fundamentals, including HTML, CSS, and JavaScript.
-
           </li>
           <li className="education__item">
           Built and consumed RESTful APIs for seamless data exchange between front-end and back-end.
-
           </li>
           <li className="education__item">
           Learned database management with MySQL, including schema design, queries, and optimization.
-
           </li>
           <li className="education__item">
           Implemented version control best practices using Git and GitHub for collaboration and project management.
@@ -29,10 +27,17 @@ function Education() {
           Applied Agile development methodologies, working in sprints and participating in code reviews.
           </li>
         </ul>
+        <ul className="experience__skills-list">
+            <li className="experience__skills-item">Javascript</li>
+            <li className="experience__skills-item">Database</li>
+            <li className="experience__skills-item">Agile Development</li>
+            <li className="experience__skills-item">Version Control</li>
+          </ul>
       </article>
       <article className="education__position">
-        <h2 className="education__role">Consumption Sciences | Laval University</h2>
-        <h3 className="education__timeframe">SEP 2009 - APR 2013, NORTH VANCOUVER, BC</h3>
+        <h2 className="education__role">Consumption Sciences</h2>
+        <h3>Laval University</h3>
+        <h4 className="education__timeframe">SEP 2009 - APR 2013, NORTH VANCOUVER, BC</h4>
         <ul className="education__achievements">
           <li className="education__item">
           Comprehensive program focused on understanding and analyzing consumer behavior, market dynamics, and business strategies.
@@ -47,11 +52,12 @@ function Education() {
           Acquired knowledge in planning, marketing, and quality management for both commercial and non-profit organizations.
           </li>
         </ul>
-        <Link to ="https://drive.google.com/file/d/1Y8-UEmFT_-Mho6_ePL8eIZX4zE6xTmMy/view?usp=sharing">
-        <button className="experience__button">
-                    <img src={downloadIcon} alt="Download" className="experience__download-icon"/>
-                </button>
-                </Link>
+        <ul className="experience__skills-list">
+            <li className="experience__skills-item">Market Research</li>
+            <li className="experience__skills-item">Marketing Strategy</li>
+            <li className="experience__skills-item">Communication</li>
+            <li className="experience__skills-item">Consumer Behavior</li>
+          </ul>
       </article>
     </section>
   )
