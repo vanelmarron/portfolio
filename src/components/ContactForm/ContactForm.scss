@@ -38,16 +38,27 @@
     }
 
     &__input {
+        @include body-small;
         border: 1px solid $primary-color;
         border-radius: 5px;
         padding: 0.5rem 1rem;
+
+        &:focus {
+            outline: 3px solid darken($primary-color, 10%);
+        }
     }
 
     &__textarea {
+        @include body-small;
+        padding: 0.5rem 1rem;
         height: 15rem;
         border: 1px solid $primary-color;
         border-radius: 5px;
         resize: none;
+
+        &:focus {
+            outline: 3px solid darken($primary-color, 10%);
+        }
     }
 
     &__button {

@@ -27,7 +27,7 @@ function Projects() {
         <h2 className="projects__name">My Projects</h2>
         <motion.ul className="projects__list" ref={projectRef}  initial={{ opacity: 0 }}
     animate={{ opacity: isInView ? 1 : 0 }} 
-    transition={{ duration: 1 }}>
+    transition={{ duration: 0.5 }}>
           <ProjectCard />
         </motion.ul>
     </motion.section>

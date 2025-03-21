@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-top: 7rem;
+  margin-top: 5rem;
   gap: 1rem;
   width: 100%;
 
@@ -41,6 +41,7 @@
     text-align: center;
     border-radius: 0.5rem;
     background-color: $about-color;
+      box-shadow: $box-shadow;
 
     &:hover {
       background-color: darken($about-color, 1%);
@@ -72,6 +73,7 @@
     gap: 1rem;
     background-color: $about-color;
     border-radius: 0.5rem;
+      box-shadow: $box-shadow;
 
     &:hover {
       background-color: darken($about-color, 1%);
@@ -100,7 +102,9 @@
       padding: 0.5rem;
       border-radius: 0.5rem;
       position: relative;
+      box-shadow: $box-shadow;
     }
+
     @include desktop {
       padding: 1rem 5rem;
     }
@@ -121,7 +125,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: $about-color;
+    background-color: darken($about-color, 1%);
     width: 100%;
     height: 100%;
     padding: 10px 15px;
@@ -129,8 +133,6 @@
     @include flex-center;
     align-content: center;
     gap: 2rem;
-    // opacity: 0;
-    // // transition: opacity s ease-in-out;
   }
 
   &__github-text {
@@ -148,4 +150,5 @@
 
 .about__approach-wrapper:hover .about__github {
   opacity: 1;
+  transition: background-color 3s ease-in-out;
 }
