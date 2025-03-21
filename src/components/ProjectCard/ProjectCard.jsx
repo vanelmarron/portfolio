@@ -22,7 +22,7 @@ const projects = [
     url: "https://drive.google.com/file/d/1GKP7JrQAiZ3U_qR1ricPlBDNiiWJHSdN/view?usp=sharing",
     title: "Marketing & Promotion",
     description:
-      "A fully responsive website for a music band, featuring media-rich content, dynamic events, and an interactive fan engagement section.",
+      "A fully responsive website for a fictional music band, featuring media-rich content, dynamic events, and an interactive fan engagement section.",
     highlights: "Responsive Design, Soundcloud Embedded Player, Concert Schedule, Community Engagement",
     stack: "HTML, SCSS, JavaScript",
     cta: "Demo",

@@ -29,10 +29,6 @@ function Footer() {
                 <p className="footer__text">Email</p>
             </li>
             </Link>
-            <li className="footer__item">
-              <img src={resume} alt="Resume" className="footer__icon"/>
-              <p className="footer__text">Resume</p>
-            </li>
         </ul>
       
     </footer>
