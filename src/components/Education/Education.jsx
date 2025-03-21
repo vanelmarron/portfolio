@@ -37,7 +37,7 @@ function Education() {
       <article className="education__position">
         <h2 className="education__role">Consumption Sciences</h2>
         <h3>Laval University</h3>
-        <h4 className="education__timeframe">SEP 2009 - APR 2013, NORTH VANCOUVER, BC</h4>
+        <h4 className="education__timeframe">SEP 2009 - APR 2013, QUÉBEC, QC</h4>
         <ul className="education__achievements">
           <li className="education__item">
           Comprehensive program focused on understanding and analyzing consumer behavior, market dynamics, and business strategies.
