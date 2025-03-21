@@ -31,11 +31,16 @@
   
   .carousel__image {
     position: absolute;
-    width: 10rem;
-    height: 10rem;
+    width: 7rem;
+    height: 7rem;
     object-fit: cover;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     cursor: pointer;
     border-radius: 0.5rem;
     border: 1px solid $primary-color;
+
+    @include tablet {
+      width: 10rem;
+      height: 10rem;
+    }
   }
