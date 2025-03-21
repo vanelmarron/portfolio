@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 
 function ContactForm() {
   const form = useRef();
-  const [ isSent, setIsSent ] = useState(false);
+  const [ isSent, setIsSent ] = useState(true);
 
   const sendEmail = (event) => {
     event.preventDefault();
@@ -16,6 +16,7 @@ function ContactForm() {
       .then(
         () => {
           console.log("Message Sent!");
+          setIsSent(true);
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -30,7 +31,8 @@ function ContactForm() {
       {isSent ? (
         <div className="contact-form__success">
           <h2>Message sent!</h2>
-          <p>Thanks for contacting me. I'll usually reply within 2 business days.</p>
+          <p>Your message has landed safely in my inbox. </p> 
+          <p>I usually reply within 2 business days. Talk soon!</p>
         </div>
       ) : (
       <form
