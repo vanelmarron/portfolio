@@ -5,13 +5,13 @@
 .tech-card {
     display: flex;
     position: relative;
-    margin-top: 5rem;
+    margin-top: 3rem;
 
     &__image {
-        height: 2rem;
+        height: 4rem;
 
         @include tablet {
-            height: 4rem;
+            height: 5;
         }
     }
 }
