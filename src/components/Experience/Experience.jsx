@@ -54,11 +54,6 @@ function Experience() {
           Managed front-of-house and back-of-house operations to seamlessly execute events and group functions, ensuring a smooth and efficient guest experience.
           </li>
         </ul>
-        <Link to="https://drive.google.com/file/d/1Y8-UEmFT_-Mho6_ePL8eIZX4zE6xTmMy/view?usp=sharing">
-        <button className="experience__button" target="blank">
-            <img src={downloadIcon} alt="Download" className="experience__download-icon"/>
-        </button>
-        </Link>
       </article>
     </section>
   );
