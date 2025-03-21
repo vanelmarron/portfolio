@@ -104,7 +104,7 @@
     background-color: $text-color;
 
   &:hover {
-    background-color: darken($text-color, 10%);
+    background-color: $secondary-color;
   }
   }
 }

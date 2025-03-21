@@ -18,6 +18,7 @@ import Photo13 from "../../assets/about-me/13.svg";
 import Photo14 from "../../assets/about-me/14.svg";
 import Photo15 from "../../assets/about-me/15.svg";
 import Photo16 from "../../assets/about-me/16.svg";
+import { section } from "framer-motion/client";
 
 const images = [
   Photo1,
@@ -46,6 +47,9 @@ function PhotoCarousel() {
   };
 
   return (
+    <section className="nutshell"> 
+      <h2 className="nutshell__title">When I'm not coding... </h2>
+      <p className="nutshell__description">Because a picture is worth a thousand words. </p> 
     <div className="carousel">
       <div className="carousel__track">
         {images.map((src, index) => {
@@ -73,6 +77,7 @@ function PhotoCarousel() {
         })}
       </div>
     </div>
+    </section>
   );
 }
 
