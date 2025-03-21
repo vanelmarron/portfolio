@@ -4,10 +4,33 @@ import emailjs from "@emailjs/browser";
 
 function ContactForm() {
   const form = useRef();
-  const [ isSent, setIsSent ] = useState(true);
+  const [ isSent, setIsSent ] = useState(false);
+  const [errors, setErrors] = useState({});
+
+  const validateForm = () => {
+    const formData = new FormData(form.current);
+    const email = formData.get("email");
+    const phone = formData.get("phone");
+
+    let newErrors = {};
+
+    if (!email.includes("@")) {
+      newErrors.email = "Please enter a valid email address.";
+    }
+
+    const phoneRegex = /^\d{3}-\d{3}-\d{4}$/;
+    if (!phoneRegex.test(phone)) {
+      newErrors.phone = "Please enter a valid phone number (555-555-5555).";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const sendEmail = (event) => {
     event.preventDefault();
+
+    if (!validateForm()) return;
 
     emailjs
       .sendForm("service_pbqvdtj", "template_nyit9cm", form.current, {
@@ -61,6 +84,7 @@ function ContactForm() {
           className="contact-form__input"
           required
         />
+        {errors.email && <p className="contact-form__error">{errors.email}</p>}
         <label htmlFor="phone" className="contact-form__label">
           Your Phone Number
         </label>
@@ -71,6 +95,7 @@ function ContactForm() {
           className="contact-form__input"
           required
         />
+        {errors.phone && <p className="contact-form__error">{errors.phone}</p>}
         <label htmlFor="message" className="contact-form__label">
           Message
         </label>
