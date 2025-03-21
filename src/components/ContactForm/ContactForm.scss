@@ -26,11 +26,14 @@
         color: $primary-color;
     }
 
-    &__form {
+    &__form, 
+    &__success {
         display: flex;
         flex-direction: column;
         width: 100%;
         gap: 0.5rem;
+        min-height: 70vh;
+        margin-top: 3rem;
     }
 
     &__label {
