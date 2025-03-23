@@ -24,6 +24,8 @@ const images = [
   Photo2,
   Photo3,
   Photo4,
+  Photo16,
+  Photo15,
   Photo5,
   Photo6,
   Photo7,
@@ -34,8 +36,6 @@ const images = [
   Photo12,
   Photo13,
   Photo14,
-  Photo15,
-  Photo16,
 ];
 
 function PhotoCarousel() {

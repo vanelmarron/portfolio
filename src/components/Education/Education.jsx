@@ -1,13 +1,10 @@
 import "./Education.scss"
-import { Link } from "react-router-dom";
-
-import downloadIcon from "../../assets/icons/download.svg";
 
 function Education() {
   return (
     <section className="education">
       <article className="education__position">
-        <h2 className="education__role">Software Engineering Bootcamp</h2>
+        <h2 className="education__role">Software Engineering</h2>
         <h3>BrainStation</h3>
         <h4 className="education__timeframe">NOV 2024 - FEB 2025, VANCOUVER, BC</h4>
         <ul className="education__achievements">

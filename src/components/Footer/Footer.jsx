@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import linkedIn from "../../assets/icons/linkedin.svg";
 import gitHub from "../../assets/images/github.svg";
 import email from "../../assets/icons/contact-me.svg";
-import resume from "../../assets/icons/about-me.svg";
 
 function Footer() {
   return (

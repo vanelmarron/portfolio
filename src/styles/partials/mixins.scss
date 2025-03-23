@@ -52,6 +52,17 @@
     }
   }
 
+  @mixin tagline-typo {
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: 0.15rem;
+      text-transform: uppercase;
+
+      @include tablet {
+        font-size: 1.313rem;
+      }
+  }
+
   @mixin flex-center {
     display: flex;
     justify-content: center;

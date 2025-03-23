@@ -35,10 +35,8 @@
     }
 
     &__item {
-        display: flex;
+        @include flex-center;
         gap: 0.5rem;
-        justify-content: center;
-        align-items: center;
         font-family: "Bebas";
         font-size: 1.25rem;
         color: $text-color;

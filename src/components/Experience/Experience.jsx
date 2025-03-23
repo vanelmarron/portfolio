@@ -1,5 +1,4 @@
 import "./Experience.scss";
-import { Link } from "react-router-dom";
 
 function Experience() {
   return (
