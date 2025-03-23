@@ -42,8 +42,8 @@
 
     &__input {
         @include body-small;
-        border: 1px solid $primary-color;
-        border-radius: 5px;
+        border: $primary-border;
+        border-radius: $border-radius;
         padding: 0.5rem 1rem;
 
         &:focus {
@@ -55,8 +55,8 @@
         @include body-small;
         padding: 0.5rem 1rem;
         height: 15rem;
-        border: 1px solid $primary-color;
-        border-radius: 5px;
+        border: $primary-border;
+        border-radius: $border-radius;
         resize: none;
 
         &:focus {
@@ -67,5 +67,9 @@
     &__button {
         width: 20rem;
         margin-bottom: 2rem;
+    }
+
+    &__error {
+        color: $invalid-color;
     }
 }

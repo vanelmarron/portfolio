@@ -1,9 +1,9 @@
-import React from 'react'
+import "./ContactPage.scss"
 import ContactForm from '../../components/ContactForm/ContactForm'
 
 function ContactPage() {
   return (
-    <main>
+    <main className="contact">
       <ContactForm/>
     </main>
   )
