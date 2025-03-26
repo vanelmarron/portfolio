@@ -38,7 +38,7 @@ const projects = [
       "An e-commerce platform that empowers artists by providing a seamless marketplace to sell their work, while integrating powerful search and recommendation features.",
     highlights: 
       "Dynamic Filters, Dropdown Menu, Customers Reviews",
-    stack: "HTML, SCSS, JavaScript, Node.js, React.js, MySQL, Google API",
+    stack: "HTML, SCSS, JavaScript, Node.js, React.js, MySQL, Google API, Jira, Canva",
     cta: "Visit Repo",
   },
   {
@@ -51,7 +51,7 @@ const projects = [
     description:
       "An Inventory Management App designed to streamline stock tracking and warehouse operations through intuitive UI and CRUD functionalities.",
     highlights: "Responsive Design, Add Item, Delete Item, Edit Item, Dynamic Inventory",
-    stack: "HTML, SCSS, JavaScript, Node.js, Express, React.js",
+    stack: "HTML, SCSS, JavaScript, Node.js, Express, React.js, MySQL, Jira, Figma",
     cta: "DEMO"
   },
 ];
