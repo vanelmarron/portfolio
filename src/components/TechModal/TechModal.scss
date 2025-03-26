@@ -1,0 +1,30 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+
+.tech-modal {
+    width: 100%;
+    max-width: 1216px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+    background-color: $background-color;
+    border: 2px solid $background-color;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: $box-shadow;
+    gap: 1rem;
+
+    @include tablet {
+        width: 80%;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
