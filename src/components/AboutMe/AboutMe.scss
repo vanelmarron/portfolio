@@ -44,7 +44,7 @@
     box-shadow: $box-shadow;
 
     &:hover {
-      background-color: darken($about-color, 1%);
+      background-color: darken($about-color, 2%);
     }
 
     @include desktop {
