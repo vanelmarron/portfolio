@@ -6,12 +6,12 @@ ReactModal.setAppElement("#root");
 
 import ProjectDescription from "../ProjectDescription/ProjectDescription";
 
-import tumblingGoat from "../../assets/images/tumbling-goat.svg";
-import inStock from "../../assets/images/instock.svg";
-import bandsite from "../../assets/images/bandsite.svg";
-import tumblingDetails from "../../assets/images/tumbling-details.svg";
-import bandsiteDetails from "../../assets/images/bandsite-details.svg";
-import instockDetails from "../../assets/images/instock-details.svg";
+import tumblingGoat from "../../assets/images/tumbling-goat.png";
+import inStock from "../../assets/images/instock.png";
+import bandsite from "../../assets/images/bandsite.png";
+import tumblingDetails from "../../assets/images/tumbling-details.png";
+import bandsiteDetails from "../../assets/images/bandsite-details.png";
+import instockDetails from "../../assets/images/instock-details.png";
 
 const projects = [
   {
