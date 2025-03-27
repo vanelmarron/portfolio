@@ -2,22 +2,22 @@ import "./PhotoCarousel.scss";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-import Photo1 from "../../assets/about-me/1.svg";
-import Photo2 from "../../assets/about-me/2.svg";
-import Photo3 from "../../assets/about-me/3.svg";
-import Photo4 from "../../assets/about-me/4.svg";
-import Photo5 from "../../assets/about-me/5.svg";
-import Photo6 from "../../assets/about-me/6.svg";
-import Photo7 from "../../assets/about-me/7.svg";
-import Photo8 from "../../assets/about-me/8.svg";
-import Photo9 from "../../assets/about-me/9.svg";
-import Photo10 from "../../assets/about-me/10.svg";
-import Photo11 from "../../assets/about-me/18.svg";
-import Photo12 from "../../assets/about-me/12.svg";
-import Photo13 from "../../assets/about-me/13.svg";
-import Photo14 from "../../assets/about-me/14.svg";
-import Photo15 from "../../assets/about-me/15.svg";
-import Photo16 from "../../assets/about-me/16.svg";
+import Photo1 from "../../assets/about-me/1.png";
+import Photo2 from "../../assets/about-me/2.png";
+import Photo3 from "../../assets/about-me/3.png";
+import Photo4 from "../../assets/about-me/4.png";
+import Photo5 from "../../assets/about-me/5.png";
+import Photo6 from "../../assets/about-me/6.png";
+import Photo7 from "../../assets/about-me/7.png";
+import Photo8 from "../../assets/about-me/8.png";
+import Photo9 from "../../assets/about-me/9.png";
+import Photo10 from "../../assets/about-me/10.png";
+import Photo11 from "../../assets/about-me/11.png";
+import Photo12 from "../../assets/about-me/12.png";
+import Photo13 from "../../assets/about-me/13.png";
+import Photo14 from "../../assets/about-me/14.png";
+import Photo15 from "../../assets/about-me/15.png";
+import Photo16 from "../../assets/about-me/16.png";
 
 const images = [
   Photo1,
