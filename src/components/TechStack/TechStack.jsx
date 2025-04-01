@@ -14,7 +14,7 @@ import expressLogo from "../../assets/images/express.svg";
 import githubLogo from "../../assets/images/github.svg";
 import PHPLogo from "../../assets/images/php.svg";
 import jiraLogo from "../../assets/images/jira.svg";
-import canvaLogo from "../../assets/images/canva.svg";
+import adobeLogo from "../../assets/images/adobe.svg";
 import figmaLogo from "../../assets/images/figma.svg";
 
 const skills = [
@@ -80,8 +80,8 @@ const skills = [
     }, 
     {
       id: "aea126f9-3ddc-4720-8388-7e38b719ceed", 
-      logo: canvaLogo, 
-      name: "Canva", 
+      logo: adobeLogo, 
+      name: "Adobe Express", 
       description: "Graphic design tool"
     }, 
     {
