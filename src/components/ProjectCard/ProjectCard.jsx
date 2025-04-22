@@ -12,6 +12,8 @@ import bandsite from "../../assets/images/bandsite.png";
 import tumblingDetails from "../../assets/images/tumbling-details.png";
 import bandsiteDetails from "../../assets/images/bandsite-details.png";
 import instockDetails from "../../assets/images/instock-details.png";
+import recovery from "../../assets/images/recovery-rides.png";
+import recoveryDetails from "../../assets/images/recovery-rides-details.png";
 
 const projects = [
   {
@@ -54,6 +56,19 @@ const projects = [
     stack: "HTML, SCSS, JavaScript, Node.js, Express, React.js, MySQL, Jira, Figma",
     cta: "DEMO"
   },
+  {
+    id: 4, 
+    image: recovery, 
+    details: recoveryDetails, 
+    name: "Recovery Rides", 
+    url: "https://www.recoveryrides.ca/", 
+    title: "Website - Volunteer Work", 
+    description: 
+    "A website for nonprofil organization connecting individuals in various stages of recovery to the outdoors—primarily through mountain biking.", 
+    highlights: "Responsive Design, Contact, Storytelling", 
+    stack: "Wix, Canva, UX Design", 
+    cta: "Visit Website"
+  }
 ];
 
 function ProjectCard() {
