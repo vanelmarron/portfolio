@@ -20,7 +20,7 @@ function ResumePage() {
       <div className="resume__title-wrapper">
         <h1 className="resume__title">Resume</h1>
         <Link
-          to="https://drive.google.com/file/d/1Y8-UEmFT_-Mho6_ePL8eIZX4zE6xTmMy/view?usp=sharing"
+          to="https://drive.google.com/file/d/1ZxDeP1PqH5sDgHyr5yGuHnaWGI7ECSu8/view?usp=sharing"
           target="blank"
         >
       
