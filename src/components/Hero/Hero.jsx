@@ -6,6 +6,7 @@ import {
 } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
   const heroRef = useRef(null);
@@ -16,6 +17,8 @@ function Hero() {
 
   const rotateXNew = useTransform(scrollY, [150, 300], [180, 360]);
   const opacityNew = useTransform(scrollY, [150, 300], [0, 1]);
+
+  const { t, i18n } = useTranslation("homepage");
 
   return (
     <section className="hero" ref={heroRef}>
@@ -28,7 +31,7 @@ function Hero() {
             position: "absolute",
           }}
         >
-          Hi, I'm Vanessa.
+          {t('hero.title')}
         </motion.h1>
         <motion.h1
           className="hero__title"
@@ -38,19 +41,17 @@ function Hero() {
             position: "absolute",
           }}
         >
-          WEB DEVELOPER
+          {t('hero.title-flipped')}
         </motion.h1>
       </div>
       <div className="hero__content">
         <p className="hero__text">
-          I'm a web developer based in Vancouver, Beautiful British Columbia. 
-          </p><p className="hero__text">I
-          build full-stack applications and websites that will help you bridge the gap between
-          your business and your customers.
+          {t('hero.text1')} 
+          </p><p className="hero__text">{t('hero.text2')}
         </p>
         <Link to="/contact">
         <button className="hero__button">
-          Let’s turn your ideas into code!
+          {t('hero.button')}
         </button>
         </Link>
       </div>

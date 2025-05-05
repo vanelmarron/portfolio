@@ -2,8 +2,11 @@ import "./Projects.scss"
 import { useRef, useEffect, useState } from 'react'
 import ProjectCard from "../ProjectCard/ProjectCard";
 import { motion, useInView } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
-function Projects() {
+function Projects() { 
+
+  const { t } = useTranslation("homepage");
 
   const projectRef = useRef(null);
   const [amount, setAmount] = useState(0.5);
@@ -24,7 +27,7 @@ function Projects() {
 
   return (
     <motion.section className="projects" id="projects">
-        <h2 className="projects__name">My Projects</h2>
+        <h2 className="projects__name">{t('projects.title')}</h2>
         <motion.ul className="projects__list" ref={projectRef}  initial={{ opacity: 0 }}
     animate={{ opacity: isInView ? 1 : 0 }} 
     transition={{ duration: 0.5 }}>

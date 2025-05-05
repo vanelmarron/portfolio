@@ -3,74 +3,125 @@
 @use "../../styles/partials/typography.scss" as *;
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: $background-color;
+  position: fixed;
+  width: 100%;
+  z-index: 15;
+  max-width: 1216px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+
+  @include tablet {
+    padding: 1rem 1.5rem;
+  }
+
+  @include desktop {
+    @include desktop-margin;
+  }
+
+  &__logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: $background-color;
-    position: fixed;
-    width: 100%;
-    z-index: 15;
-    max-width: 1216px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
+    gap: 0.75rem;
+  }
+
+  &__name {
+    font-family: "Bebas";
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: $text-color;
 
     @include tablet {
-        padding: 1rem 1.5rem;
+      font-size: 1.25rem;
+    }
+  }
+
+  &__headshot {
+    height: 2rem;
+    border-radius: 50%;
+  }
+
+  &__list {
+    @include flex-center;
+    gap: 1.5rem;
+  }
+
+  &__item {
+    @include flex-center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+
+  &__text {
+    display: none;
+
+    @include tablet {
+      display: contents;
+      font-family: "Bebas";
+      font-size: 1.25rem;
+      color: $text-color;
+    }
+  }
+
+  &__icon {
+    height: 1rem;
+    align-items: center;
+  }
+}
+
+.language {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__item {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
     }
 
-    @include desktop {
-        @include desktop-margin;
+    &:hover {
+      text-decoration: underline $primary-color;
     }
 
-    &__logo {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
+    &--active {
+      text-decoration: underline $primary-color;
     }
+  }
 
-    &__name {
-        font-family: "Bebas";
-        letter-spacing: 0.2rem;
-        font-size: 1rem;
-        text-decoration: none;
-        color: $text-color;
+  &__button {
+    @include flex-center;
+    display: contents;
+    font-family: "Bebas";
+    font-size: 1.25rem;
+    color: $text-color;
+    background-color: $background-color;
+    text-decoration: none;
+    margin-top: 0;
+    padding: 0;
 
-        @include tablet {
-            font-size: 1.25rem;
-        }
+    &:hover {
+      background-color: $background-color;
+      color: $primary-color;
+      text-decoration: underline $primary-color;
     }
-
-    &__headshot {
-        height: 2rem;
-        border-radius: 50%;
-    }
-
-    &__list {
-        @include flex-center;
-        gap: 1.5rem;
-    }
-
-    &__item {
-        @include flex-center;
-        gap: 0.5rem;
-        cursor: pointer;
-    }
-
-    &__text {
-        display: none;
-
-        @include tablet {
-            display: contents;
-            font-family: "Bebas";
-            font-size: 1.25rem;
-            color: $text-color;
-        }
-    }
-
-    &__icon {
-        height: 1rem;
-    }
-
+    &--active {
+        color: $primary-color;
+        text-decoration: underline $primary-color;
+        font-weight: bold;
+      }
+  }
 }

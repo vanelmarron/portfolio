@@ -1,6 +1,7 @@
 import "./PhotoCarousel.scss";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import Photo1 from "../../assets/about-me/1.png";
 import Photo2 from "../../assets/about-me/2.png";
@@ -39,14 +40,16 @@ const images = [
 ];
 
 function PhotoCarousel() {
-    const [activeIndex, setActiveIndex] = useState(3); 
+  const { t } = useTranslation("homepage");
+
+  const [activeIndex, setActiveIndex] = useState(3);
 
   const handleClick = (index) => {
     setActiveIndex(index);
   };
 
   const handleDragEnd = (event, info) => {
-    const threshold = 50; 
+    const threshold = 50;
     if (info.offset.x < -threshold) {
       setActiveIndex((prev) => (prev + 1) % images.length);
     } else if (info.offset.x > threshold) {
@@ -55,41 +58,52 @@ function PhotoCarousel() {
   };
 
   return (
-    <section className="nutshell"> 
-      <h2 className="nutshell__title">When I'm not coding... </h2>
-      <p className="nutshell__description">A picture is worth a thousand words. </p> 
-    <div className="carousel">
-      <motion.div className="carousel__track" drag="x"
+    <section className="nutshell">
+      <h2 className="nutshell__title">{t('not-coding.title')}</h2>
+      <p className="nutshell__description">
+      {t('not-coding.text')} 
+      </p>
+      <div className="carousel">
+        <motion.div
+          className="carousel__track"
+          drag="x"
           dragConstraints={{ left: 0, right: 0 }}
-          onDragEnd={handleDragEnd} >
-        {images.map((src, index) => {
-          const distance = (index - activeIndex + images.length) % images.length;
-          const wrappedDistance = distance > images.length / 2 ? distance - images.length : distance;
+          onDragEnd={handleDragEnd}
+        >
+          {images.map((src, index) => {
+            const distance =
+              (index - activeIndex + images.length) % images.length;
+            const wrappedDistance =
+              distance > images.length / 2
+                ? distance - images.length
+                : distance;
 
-          const scale = wrappedDistance === 0 ? 2 : 1;
-          const opacity = Math.abs(wrappedDistance) <= 1.5 ? 1 - Math.abs(wrappedDistance) * 0.5 : 0.5;
-          const translateX = wrappedDistance * 180;
-          const zIndex = wrappedDistance === 0 ? 10 : 5;
+            const scale = wrappedDistance === 0 ? 2 : 1;
+            const opacity =
+              Math.abs(wrappedDistance) <= 1.5
+                ? 1 - Math.abs(wrappedDistance) * 0.5
+                : 0.5;
+            const translateX = wrappedDistance * 180;
+            const zIndex = wrappedDistance === 0 ? 10 : 5;
 
-          return (
-            <motion.img
-              key={index}
-              src={src}
-              alt={`Photo ${index}`}
-              className="carousel__image"
-              initial={{ scale: 1, opacity: 0.5 }}
-              animate={{ scale, opacity, x: translateX }}
-              transition={{ duration: 0 }}
-              onClick={() => handleClick(index)}
-              style={{ zIndex }}
-            />
-          );
-        })}
-      </motion.div>
-    </div>
+            return (
+              <motion.img
+                key={index}
+                src={src}
+                alt={`Photo ${index}`}
+                className="carousel__image"
+                initial={{ scale: 1, opacity: 0.5 }}
+                animate={{ scale, opacity, x: translateX }}
+                transition={{ duration: 0 }}
+                onClick={() => handleClick(index)}
+                style={{ zIndex }}
+              />
+            );
+          })}
+        </motion.div>
+      </div>
     </section>
   );
 }
 
 export default PhotoCarousel;
- 

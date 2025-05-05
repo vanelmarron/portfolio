@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import ReactModal from "react-modal";
 ReactModal.setAppElement("#root");
+import {useTranslation} from "react-i18next"
 
 import ProjectDescription from "../ProjectDescription/ProjectDescription";
 
@@ -15,63 +16,60 @@ import instockDetails from "../../assets/images/instock-details.png";
 import recovery from "../../assets/images/recovery-rides.png";
 import recoveryDetails from "../../assets/images/recovery-rides-details.png";
 
-const projects = [
-  {
-    id: 1,
-    image: bandsite,
-    details: bandsiteDetails,
-    name: "Bandsite",
-    url: "https://drive.google.com/file/d/1GKP7JrQAiZ3U_qR1ricPlBDNiiWJHSdN/view?usp=sharing",
-    title: "Marketing & Promotion",
-    description:
-      "A fully responsive website for a fictional music band, featuring media-rich content, dynamic events, and an interactive fan engagement section.",
-    highlights: "Responsive Design, Soundcloud Embedded Player, Concert Schedule, Community Engagement",
-    stack: "HTML, SCSS, JavaScript",
-    cta: "Demo",
-  },
-  {
-    id: 2,
-    image: tumblingGoat,
-    details: tumblingDetails,
-    name: "Tumbling Goat",
-    url: "https://github.com/vanelmarron/tumbling-goat-frontend",
-    title: "E-Commerce Platform",
-    description:
-      "An e-commerce platform that empowers artists by providing a seamless marketplace to sell their work, while integrating powerful search and recommendation features.",
-    highlights: 
-      "Dynamic Filters, Dropdown Menu, Customers Reviews",
-    stack: "HTML, SCSS, JavaScript, Node.js, React.js, MySQL, Google API, Jira, Canva",
-    cta: "Visit Repo",
-  },
-  {
-    id: 3,
-    image: inStock,
-    details: instockDetails,
-    name: "InStock",
-    url: "https://drive.google.com/file/d/1ANg1c8j8DgIymswkjoDPM0BJWgNb9mpz/view?usp=sharing",
-    title: "Inventory Management System",
-    description:
-      "An Inventory Management App designed to streamline stock tracking and warehouse operations through intuitive UI and CRUD functionalities.",
-    highlights: "Responsive Design, Add Item, Delete Item, Edit Item, Dynamic Inventory",
-    stack: "HTML, SCSS, JavaScript, Node.js, Express, React.js, MySQL, Jira, Figma",
-    cta: "DEMO"
-  },
-  {
-    id: 4, 
-    image: recovery, 
-    details: recoveryDetails, 
-    name: "Recovery Rides", 
-    url: "https://www.recoveryrides.ca/", 
-    title: "Website - Volunteer Work", 
-    description: 
-    "A website for nonprofil organization connecting individuals in various stages of recovery to the outdoors—primarily through mountain biking.", 
-    highlights: "Responsive Design, Contact, Storytelling", 
-    stack: "Wix, Canva, UX Design", 
-    cta: "Visit Website"
-  }
-];
-
 function ProjectCard() {
+
+  const { t } = useTranslation('homepage');
+
+  const projects = [
+    {
+      id: 1,
+      image: bandsite,
+      details: bandsiteDetails,
+      name: "Bandsite",
+      url: "https://drive.google.com/file/d/1GKP7JrQAiZ3U_qR1ricPlBDNiiWJHSdN/view?usp=sharing",
+      title: t('projects.bandsite.title'),
+      description: t('projects.bandsite.description'),
+      highlights: t('projects.bandsite.highlights'),
+      stack: t('projects.bandsite.tech'),
+      cta: t('projects.bandsite.cta'),
+    },
+    {
+      id: 2,
+      image: tumblingGoat,
+      details: tumblingDetails,
+      name: "Tumbling Goat",
+      url: "https://github.com/vanelmarron/tumbling-goat-frontend",
+      title: t('projects.tumbling-goat.title'),
+      description: t('projects.tumbling-goat.description'),
+      highlights: t('projects.tumbling-goat.highlights'),
+      stack: t('projects.tumbling-goat.tech'),
+      cta: t('projects.tumbling-goat.cta'),
+    },
+    {
+      id: 3,
+      image: inStock,
+      details: instockDetails,
+      name: "InStock",
+      url: "https://drive.google.com/file/d/1ANg1c8j8DgIymswkjoDPM0BJWgNb9mpz/view?usp=sharing",
+      title: t('projects.instock.title'),
+      description: t('projects.instock.description'),
+      highlights: t('projects.instock.highlights'),
+      stack: t('projects.instock.tech'),
+      cta: t('projects.instock.cta')
+    },
+    {
+      id: 4, 
+      image: recovery, 
+      details: recoveryDetails, 
+      name: "Recovery Rides", 
+      url: "https://www.recoveryrides.ca/", 
+      title: t('projects.recovery-rides.title'), 
+      description: t('projects.recovery-rides.description'), 
+      highlights: t('projects.recovery-rides.highlights'), 
+      stack: t('projects.recovery-rides.tech'), 
+      cta: t('projects.recovery-rides.cta')
+    }
+  ];
 
   const [activeProject, setActiveProject ] = useState(null);
 
