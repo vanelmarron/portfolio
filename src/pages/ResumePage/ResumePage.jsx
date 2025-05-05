@@ -2,12 +2,15 @@ import "./ResumePage.scss";
 
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 import Experience from "../../components/Experience/Experience";
 import Education from "../../components/Education/Education";
 import downloadIcon from "../../assets/icons/download.svg";
 
 function ResumePage() {
+
+  const { t } = useTranslation('resume');
 
       useEffect(() => {
         window.scrollTo(0, 0);
@@ -18,7 +21,7 @@ function ResumePage() {
   return (
     <main className="resume">
       <div className="resume__title-wrapper">
-        <h1 className="resume__title">Resume</h1>
+        <h1 className="resume__title">{t('resume.title')}</h1>
         <Link
           to="https://drive.google.com/file/d/1ZxDeP1PqH5sDgHyr5yGuHnaWGI7ECSu8/view?usp=sharing"
           target="blank"
@@ -40,7 +43,7 @@ function ResumePage() {
           }`}
           onClick={() => setActiveTab("experience")}
         >
-          Experience
+          {t('resume.experience.title')}
         </li>
         <li
           className={`resume__nav-item ${
@@ -48,7 +51,7 @@ function ResumePage() {
           }`}
           onClick={() => setActiveTab("education")}
         >
-          Education
+          {t('resume.education.title')}
         </li>
       </ul>
       {activeTab === "experience" && <Experience />}

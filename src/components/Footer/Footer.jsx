@@ -1,14 +1,17 @@
 import "./Footer.scss"
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import linkedIn from "../../assets/icons/linkedin.svg";
 import gitHub from "../../assets/images/github.svg";
 import email from "../../assets/icons/contact-me.svg";
 
 function Footer() {
+
+  const { t } = useTranslation('contact')
   return (
     <footer className="footer">
-        <p className="footer__rights">&copy; 2025. All rights reserved </p>
+        <p className="footer__rights">&copy; {t('footer.rights')}</p>
         <ul className="footer__contact">
           <Link to="https://www.linkedin.com/in/vanessa-lebrun/" target="_blank">
             <li className="footer__item">

@@ -1,0 +1,86 @@
+{
+    "resume": {
+        "title" : "CURRICULUM VITAE", 
+        "experience" : {
+            "title" :"Expérience",
+            "webdev" : {
+                "title" : "Développeuse Web & Spécialiste Marketing", 
+                "employer" : "Freelance", 
+                "date" : "MARS 2025 - MAINTENANT, BURNABY, C.-B.", 
+                "experience1" : "Création et mise en œuvre de campagnes visant à accroître la visibilité des marques et l’engagement des clientèles.", 
+                "experience2" : "Développement de stratégies ciblées pour les réseaux sociaux et gestion de campagnes publicitaires payantes afin de maximiser le retour sur investissement.", 
+                "experience3" : "Conception et développement d’applications full-stack et de sites web adaptatifs pour une expérience utilisateur fluide.", 
+                "experience4" : "Mise en place de stratégies SEO et création de contenu engageant et de haute qualité pour améliorer la visibilité, attirer la clientèle cible et favoriser la fidélisation.",
+                "skill1" : "Développement Web", 
+                "skill2" : "Analyse de données", 
+                "skill3" : "Marketing numérique", 
+                "skill4" : "Gestion de projet"
+            }, 
+            "marketing" : {
+                "title" : "Spécialiste Marketing et GRA", 
+                "employer" : "Giant Group Canada", 
+                "date" : "MARS 2019 - NOV. 2024, NORTH VANCOUVER, C.-B.", 
+                "experience1" : "Gestion et optimisation du site web de l’entreprise, avec localisation de 5 à 10 lancements produits par an, pour améliorer l’expérience utilisateur et les taux de conversion.", 
+                "experience2" : "Direction du Giant Retail Academy, avec gestion de contenu éducatif hebdomadaire et mise en place de deux programmes incitatifs annuels.", 
+                "experience3" : "Développement d’initiatives stratégiques pour renforcer la distribution et accroître la notoriété de la marque en magasin.", 
+                "experience4" : "Coordination de 8 à 10 collaborations annuelles avec des athlètes, médias et organisateurs d’événements pour générer de la visibilité et attirer de nouveaux clients.",
+                "skill1" : "Gestion de projet", 
+                "skill2" : "Analyse de données", 
+                "skill3" : "Marketing numérique", 
+                "skill4" : "Email Marketing"
+            }, 
+            "inside-sales" : {
+                "title" : "Représentante des ventes internes", 
+                "employer" : "Giant Group Canada", 
+                "date" : "SEPT. 2017 - MARS 2019, NORTH VANCOUVER, C.-B.", 
+                "experience1" : "Atteinte et dépassement des objectifs de croissance annuelle des ventes de 20 %, avec une performance excédant de 5 % les prévisions pendant deux années consécutives.", 
+                "experience2" : "Communication proactive et soutien constant pour bâtir des relations durables avec les partenaires et les clients.", 
+                "skill1" : "Présentation de produit", 
+                "skill2" : "Service à la clientèle", 
+                "skill3" : "Écoute active", 
+                "skill4" : "Résolution de problèmes"
+            }, 
+            "assistant-manager" : {
+                "title" : "Assistante-gérante", 
+                "employer" : "Mission Springs Group", 
+                "date" : "JANV. 2017 - AOÛT 2017, MISSION, C.-B.", 
+                "experience1" : "Supervision d’une équipe de plus de 20 employé·es à l’avant-scène et mise en place de protocoles de service pour améliorer la satisfaction des client·es.", 
+                "experience2" : "Coordination des opérations en salle et en cuisine lors d’événements et de groupes, assurant un déroulement efficace et sans accroc.", 
+                "skill1" : "Travail d’équipe", 
+                "skill2" : "Gestion multitâche", 
+                "skill3" : "Documentation", 
+                "skill4" : "Communication"
+            }
+        },
+        "education" : {
+            "title" :"Éducation",
+            "brainstation" : {
+                "title" : "Génie logiciel", 
+                "school" : "BrainStation", 
+                "date" : "NOV. 2024 - FÉV. 2025, VANCOUVER, C.-B.", 
+                "experience1" : "Acquisition de solides bases en informatique, incluant HTML, CSS et JavaScript.", 
+                "experience2" : "Création et intégration d’API RESTful pour assurer une communication fluide entre les interfaces front-end et back-end.", 
+                "experience3" : "Apprentissage de la gestion de base de données avec MySQL, incluant la modélisation, les requêtes et l’optimisation.", 
+                "experience4" : "Utilisation des meilleures pratiques de contrôle de version avec Git et GitHub pour le travail collaboratif.",
+                "experience5" : "Application des méthodologies Agile avec sprints et revues de code.",
+                "skill1" : "Javascript", 
+                "skill2" : "Base de données", 
+                "skill3" : "Développement Agile", 
+                "skill4" : "Contrôle de version"
+            }, 
+            "laval" : {
+                "title" : "Sciences de la consommation", 
+                "school" : "Université Laval", 
+                "date" : "SEPT. 2009 - AVR. 2013, QUÉBEC, QC", 
+                "experience1" : "Formation multidisciplinaire axée sur l’analyse du comportement des consommateur·rices, des marchés et des stratégies d’affaires.", 
+                "experience2" : "Cours suivis : comportement du consommateur, recherche, distribution, droit de la consommation et communication.", 
+                "experience3" : "Expertise développée en segmentation de marché, analyse des besoins et gestion de la relation client.", 
+                "experience4" : "Connaissances acquises en planification, marketing et gestion de la qualité dans les secteurs privé et à but non lucratif.",
+                "skill1" : "Étude de marché", 
+                "skill2" : "Stratégie de marketing", 
+                "skill3" : "Communication", 
+                "skill4" : "Comportement du consommateur"
+            }
+        }
+    }
+}

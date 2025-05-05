@@ -1,0 +1,78 @@
+{
+    "hero": {
+        "title": "Hi, I'm Vanessa.", 
+        "title-flipped" : "Web Developer.",
+        "text1" : "I'm a web developer based in Vancouver, Beautiful British Columbia.", 
+        "text2" : "I build full-stack applications and websites that will help you bridge the gap between your business and your customers.", 
+        "button" : "Let’s turn your ideas into code!"
+    },
+    "toolbox" : {
+        "title" : "My Toolbox", 
+        "react" : "User Interface Library",
+        "javascript" : "Programming Language", 
+        "html" : "Standard markup language", 
+        "scss" : "CSS Preprocessor Spripting Language", 
+        "mysql" : "Database Management System", 
+        "github" : "Version control system", 
+        "node" : "Javascript runtime environment", 
+        "express" : "Web application framework", 
+        "php" : "Server-side scripting language", 
+        "jira" : "Project Management Software", 
+        "adobe" : "Graphic design tool",
+        "figma" : "Collaborative design tool"
+    },    
+    "projects" : {
+        "title" : "My Projects",
+        "bandsite" : {
+            "title" : "Marketing & Promotion", 
+            "description" : "A fully responsive website for a fictional music band, featuring media-rich content, dynamic events, and an interactive fan engagement section.", 
+            "highlights" : "Responsive Design, Soundcloud Embedded Player, Concert Schedule, Community Engagement", 
+            "tech" : "HTML, SCSS, JavaScript", 
+            "close" : "Close", 
+            "cta" : "Demo"
+        }, 
+        "tumbling-goat" : {
+            "title" : "E-Commerce Platform", 
+            "description" : "An e-commerce platform that empowers artists by providing a seamless marketplace to sell their work, while integrating powerful search and recommendation features.", 
+            "highlights" : "Dynamic Filters, Dropdown Menu, Customers Reviews", 
+            "tech" : "HTML, SCSS, JavaScript, Node.js, React.js, MySQL, Google API, Jira, Canva", 
+            "close" : "Close", 
+            "cta" : "Visit Repo"
+        }, 
+        "instock" : {
+            "title" : "Inventory Management System", 
+            "description" : "An Inventory Management App designed to streamline stock tracking and warehouse operations through intuitive UI and CRUD functionalities.", 
+            "highlights" : "Responsive Design, Add Item, Delete Item, Edit Item, Dynamic Inventory", 
+            "tech" : "HTML, SCSS, JavaScript, Node.js, Express, React.js, MySQL, Jira, Figma", 
+            "close" : "Close", 
+            "cta" : "Demo"
+        }, 
+        "recovery-rides" : {
+            "title" : "Website - Volunteer Work", 
+            "description" : "A website for nonprofil organization connecting individuals in various stages of recovery to the outdoors—primarily through mountain biking.", 
+            "highlights" : "Responsive Design, Contact, Storytelling", 
+            "tech" : "Wix, Canva, UX Design", 
+            "close" : "Close", 
+            "cta" : "Visit Website"
+        }
+        }, 
+        "about-me" : {
+            "title" : "About Me", 
+            "item1-bold" : "5+ Years", 
+            "item1-reg" : "Marketing", 
+            "item2-bold" : "Active", 
+            "item2-reg" : "Adventurous", 
+            "item3-bold" : "Creative", 
+            "item3-reg" : "Problem Solver", 
+            "item4-bold" : "Bilingual", 
+            "item4-reg" : "EN | FR", 
+            "tagline" : "Crafting Beautiful, Responsive, and Purposeful Designs", 
+            "coding1" : " I'm an active and outdoorsy person who has recently discovered a passion for coding.", 
+            "coding2" : " To me, it's a form of art—one that I use to craft visually appealing, responsive, and user-friendly digital experiences. I bring creativity and attention to detail to every project, ensuring the final product truly reflects my clients' vision.", 
+            "approach": "Visit my GitHub" 
+        }, 
+        "not-coding" : {
+            "title" : "When I'm not coding", 
+            "text" : "A picture is worth a thousand words."
+        }
+}

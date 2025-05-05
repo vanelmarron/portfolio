@@ -1,0 +1,19 @@
+{
+    "contact" : {
+        "title" : "CONTACTEZ-MOI!", 
+        "email" : "vanessa.lebrun.1@gmail.com", 
+        "name" : "Votre nom", 
+        "your-email" : "Votre courriel", 
+        "phone" : "Votre numéro de téléphone", 
+        "message" : "Message"
+    }, 
+    "header" : {
+        "projects" : "Projets", 
+        "about-me" : "À propos", 
+        "contact" : "contact", 
+        "resume" : "CV"
+    }, 
+    "footer" : {
+        "rights" : "2025. Tous droits réservés"
+    }
+}

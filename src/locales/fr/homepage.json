@@ -1,0 +1,78 @@
+{
+    "hero": {
+        "title": "Je suis Vanessa.", 
+        "title-flipped" : "Développeuse Web.",
+        "text1" : "Basée à Vancouver, en Colombie-Britannique.", 
+        "text2" : "Je crée des applications et des sites web full-stack qui connectent les entreprises avec leur clientèle cible grâce à des solutions numériques efficaces et sur mesure.", 
+        "button" : "Donnons vie à votre projet!"
+    },
+    "toolbox" : {
+        "title" : "Ma boîte à outils", 
+        "react" : "Bibliothèque d’interface utilisateur",
+        "javascript" : "Langage de programmation", 
+        "html" : "Langage de balisage standard", 
+        "scss" : "Langage de script préprocesseur CSS", 
+        "mysql" : "Système de gestion de base de données", 
+        "github" : "Système de contrôle de version", 
+        "node" : "Environnement d’exécution JavaScript", 
+        "express" : "Framework d’application web", 
+        "php" : "Langage de script côté serveur", 
+        "jira" : "Logiciel de gestion de projet", 
+        "adobe" : "Outil de design graphique",
+        "figma" : "Outil de design collaboratif"
+    },
+    "projects" : {
+        "title" : "Mes Projets",
+        "bandsite" : {
+            "title" : "Marketing & Promotion", 
+            "description" : "Un site web entièrement réactif pour un groupe de musique fictif, avec du contenu riche en médias, des événements dynamiques, et une section interactive pour l'engagement des fans.", 
+            "highlights" : "Design adaptif, lecteur Soundcloud, horaire des concerts, engagement de la communauté", 
+            "tech" : "HTML, SCSS, JavaScript", 
+            "close" : "Fermer", 
+            "cta" : "Démo"
+        }, 
+        "tumbling-goat" : {
+            "title" : "Plateforme e-commerce", 
+            "description" : "Une plateforme de commerce électronique qui permet aux artistes de vendre leurs œuvres dans un marché fluide, tout en intégrant des fonctionnalités puissantes de recherche et de recommandation.", 
+            "highlights" : "Filtres dynamiques, menu déroulant, avis des clients", 
+            "tech" : "HTML, SCSS, JavaScript, Node.js, React.js, MySQL, Google API, Jira, Canva", 
+            "close" : "Fermer", 
+            "cta" : "Visiter GitHub"
+        }, 
+        "instock" : {
+            "title" : "Système de gestion d'inventaire", 
+            "description" : "Une application de gestion d’inventaire conçue pour simplifier le suivi des stocks et les opérations d’entrepôt grâce à une interface intuitive et des fonctionnalités CRUD.", 
+            "highlights" : "Design adaptatif, Ajouter un article, Supprimer un article, Modifier un article, Inventaire dynamique", 
+            "tech" : "HTML, SCSS, JavaScript, Node.js, Express, React.js, MySQL, Jira, Figma", 
+            "close" : "Fermer", 
+            "cta" : "Démo"
+        }, 
+        "recovery-rides" : {
+            "title" : "Site web - Bénévolat", 
+            "description" : "Un site web pour un organisme sans but lucratif qui connecte des personnes en processus de réhabilitation avec la nature — principalement à travers la pratique du vélo de montagne.", 
+            "highlights" : "Design adaptatif, formulaire de contact, récit (storytelling)", 
+            "tech" : "Wix, Canva, UX Design", 
+            "close" : "Fermer", 
+            "cta" : "Visiter le site"
+        }
+        }, 
+        "about-me" : {
+            "title" : "À propos de moi", 
+            "item1-bold" : "+5 ans", 
+            "item1-reg" : "D'experience Marketing", 
+            "item2-bold" : "Active", 
+            "item2-reg" : "Aventurière", 
+            "item3-bold" : "Créativité", 
+            "item3-reg" : "Résolution de problème", 
+            "item4-bold" : "Bilingue", 
+            "item4-reg" : "FR | EN", 
+            "tagline" : "Créer des designs beaux, adaptatifs et intentionnels", 
+            "coding1" : " Je suis une personne active et passionnée de plein air qui a récemment découvert une passion pour la programmation.", 
+            "coding2" : " Pour moi, c’est une forme d’art — un moyen de créer des expériences numériques visuellement attrayantes, adaptatives et conviviales. J’apporte de la créativité et une grande attention aux détails dans chaque projet, afin que le produit final reflète réellement la vision de mes client·e·s.", 
+            "approach": "Visitez mon GitHub" 
+        }, 
+        "not-coding" : {
+            "title" : "Quand je ne suis pas en train de coder...", 
+            "text" : "Une image vaut mille mots."
+        }
+}

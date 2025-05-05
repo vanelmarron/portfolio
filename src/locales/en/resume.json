@@ -1,0 +1,86 @@
+{
+    "resume": {
+        "title" : "RESUME", 
+        "experience" : {
+            "title" :"Experience",
+            "webdev" : {
+                "title" : "Web Developer & Marketing Specialist", 
+                "employer" : "Freelance", 
+                "date" : "MAR 2025 - NOW, BURNABY, BC", 
+                "experience1" : "Create and implement campaigns that boost brand visibility and customer engagement.", 
+                "experience2" : "Develop targeted social media strategies and manage paid ad campaigns for maximum ROI.", 
+                "experience3" : "Design and develop full-stack applications and responsive websites, ensuring a seamless user experience.", 
+                "experience4" : "Implement SEO strategies and create engaging, high-quality content to enhance website visibility, attract target audiences, and drive customer retention.",
+                "skill1" : "Web Development", 
+                "skill2" : "Data Analysis", 
+                "skill3" : "Digital Marketing", 
+                "skill4" : "Project Management"
+            }, 
+            "marketing" : {
+                "title" : "Marketing & GRA Specialist", 
+                "employer" : "Giant Group Canada", 
+                "date" : "MAR 2019 - NOV 2024, NORTH VANCOUVER, BC", 
+                "experience1" : "Managed and optimized the company website, localizing 5 to 10 product launch content pieces annually and enhancing user experiences to increase engagement and conversion rates.", 
+                "experience2" : "Directed the Giant Retail Academy, overseeing the distribution and localization of weekly educational content and launching two yearly incentive programs.", 
+                "experience3" : "Developed strategic initiatives to strengthen product distribution and elevate brand presence across retail channels.", 
+                "experience4" : "Spearheaded 8 to 10 annual collaborations with athletes, media, and event organizers to increase brand visibility and drive customer acquisition.",
+                "skill1" : "Project Management", 
+                "skill2" : "Data Analysis", 
+                "skill3" : "Digital Marketing", 
+                "skill4" : "Email Marketing"
+            }, 
+            "inside-sales" : {
+                "title" : "Inside Sales Representative", 
+                "employer" : "Giant Group Canada", 
+                "date" : "SEP 2017 - MAR 2019, NORTH VANCOUVER, BC", 
+                "experience1" : "Set and achieved annual sales growth targets of 20%, consistently surpassing goals by over 5% for two consecutive years.", 
+                "experience2" : "Provided proactive communication and support, fostering long-term partnerships with retail partners and customers.", 
+                "skill1" : "Product Knowledge", 
+                "skill2" : "Customer Service", 
+                "skill3" : "Active Listening", 
+                "skill4" : "Problem-Solving"
+            }, 
+            "assistant-manager" : {
+                "title" : "Assistant Manager", 
+                "employer" : "Mission Springs Group", 
+                "date" : "JAN 2017 - AUG 2017, MISSION, BC", 
+                "experience1" : "Managed and led a front-of-house team of over 20 staff members, implementing service protocols to enhance customer satisfaction.", 
+                "experience2" : "Managed front-of-house and back-of-house operations to seamlessly execute events and group functions, ensuring a smooth and efficient guest experience.", 
+                "skill1" : "Team Work", 
+                "skill2" : "Multi-Tasking", 
+                "skill3" : "Recordkeeping", 
+                "skill4" : "Communication"
+            }
+        }, 
+        "education" : {
+            "title" :"Education",
+            "brainstation" : {
+                "title" : "Software Engineering", 
+                "school" : "BrainStation", 
+                "date" : "NOV 2024 - FEB 2025, VANCOUVER, BC", 
+                "experience1" : "Gained a strong foundation in computer science fundamentals, including HTML, CSS, and JavaScript.", 
+                "experience2" : "Built and consumed RESTful APIs for seamless data exchange between front-end and back-end.", 
+                "experience3" : "Learned database management with MySQL, including schema design, queries, and optimization.", 
+                "experience4" : "Implemented version control best practices using Git and GitHub for collaboration and project management.",
+                "experience5" : "Applied Agile development methodologies, working in sprints and participating in code reviews.",
+                "skill1" : "Javascript", 
+                "skill2" : "Database", 
+                "skill3" : "Agile Development", 
+                "skill4" : "Version Control"
+            }, 
+            "laval" : {
+                "title" : "Consumption Sciences", 
+                "employer" : "Laval University", 
+                "date" : "SEP 2009 - APR 2013, QUÉBEC, QC", 
+                "experience1" : "Comprehensive program focused on understanding and analyzing consumer behavior, market dynamics, and business strategies.", 
+                "experience2" : "Completed courses in Consumer Behavior, Consumer Research, Distribution, Consumer Law, and Communication.", 
+                "experience3" : "Developed expertise in market segmentation, customer needs analysis, and relationship management.", 
+                "experience4" : "Acquired knowledge in planning, marketing, and quality management for both commercial and non-profit organizations.",
+                "skill1" : "Market Research", 
+                "skill2" : "Marketing Strategy", 
+                "skill3" : "Communication", 
+                "skill4" : "Consumer Behavior"
+            }
+        }
+    }
+}

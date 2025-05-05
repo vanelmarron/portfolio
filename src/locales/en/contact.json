@@ -1,0 +1,19 @@
+{
+    "contact" : {
+        "title" : "LET'S CONNECT", 
+        "email" : "vanessa.lebrun.1@gmail.com", 
+        "name" : "Your Name", 
+        "your-email" : "Your Email", 
+        "phone" : "Your phone number", 
+        "message" : "message"
+    }, 
+    "header" : {
+        "projects" : "Projects", 
+        "about-me" : "About Me", 
+        "contact" : "contact", 
+        "resume" : "resume"
+    }, 
+    "footer" : {
+        "rights" : "2025. All rights reserved"
+    }
+}

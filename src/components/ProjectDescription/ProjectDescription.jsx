@@ -1,10 +1,14 @@
 import "./ProjectDescription.scss"
 import { Link } from 'react-router-dom';
+import {useTranslation} from "react-i18next";
 
 import highlightIcon from "../../assets/icons/highlight.svg";
 import techIcon from "../../assets/icons/stack.svg";
 
 function ProjectDescription({ project, onClose }) {
+
+  const {t} = useTranslation('homepage');
+
   return (
     <div className="active-project">
         <h2 className="active-project__title">{project.name}</h2>
@@ -23,7 +27,7 @@ function ProjectDescription({ project, onClose }) {
         </div>
       </div>
         <div className="active-project__cta active-project__cta--tablet">
-        <button className="active-project__close" onClick={onClose}>Close</button>
+        <button className="active-project__close" onClick={onClose}>{t('projects.bandsite.close')}</button>
         <Link to={project.url} target="_blank">
         <button className="active-project__demo">{project.cta}</button>
         </Link>
