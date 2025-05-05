@@ -1,8 +1,12 @@
 import "./ContactForm.scss";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 function ContactForm() {
+
+  const { t } = useTranslation('contact');
+
   const form = useRef();
   const [ isSent, setIsSent ] = useState(false);
   const [errors, setErrors] = useState({});
@@ -49,13 +53,13 @@ function ContactForm() {
 
   return (
     <section className="contact-form">
-      <h1 className="contact-form__title">Let's Connect!</h1>
+      <h1 className="contact-form__title">{t('contact.title')}</h1>
       <p className="contact-form__address">vanessa.lebrun.1@gmail.com</p>
       {isSent ? (
         <div className="contact-form__success">
-          <h2>Message sent!</h2>
-          <p>Your message has landed safely in my inbox. </p> 
-          <p>I usually reply within 2 business days. Talk soon!</p>
+          <h2>{t('contact.confirmation')}</h2>
+          <p>{t('contact.text1')}</p> 
+          <p>{t('contact.text2')}</p>
         </div>
       ) : (
       <form
@@ -65,7 +69,7 @@ function ContactForm() {
         onSubmit={sendEmail}
       >
         <label htmlFor="name" className="contact-form__label">
-          Your Name
+        {t('contact.name')}
         </label>
         <input
           type="text"
@@ -75,7 +79,7 @@ function ContactForm() {
           required
         />
         <label htmlFor="email" className="contact-form__label">
-          Your Email
+        {t('contact.your-email')}
         </label>
         <input
           type="text"
@@ -86,7 +90,7 @@ function ContactForm() {
         />
         {errors.email && <p className="contact-form__error">{errors.email}</p>}
         <label htmlFor="phone" className="contact-form__label">
-          Your Phone Number
+        {t('contact.phone')}
         </label>
         <input
           type="phone"
@@ -97,7 +101,7 @@ function ContactForm() {
         />
         {errors.phone && <p className="contact-form__error">{errors.phone}</p>}
         <label htmlFor="message" className="contact-form__label">
-          Message
+        {t('contact.message')}
         </label>
         <textarea
           name="message"
@@ -106,7 +110,7 @@ function ContactForm() {
           required
         ></textarea>
         <button type="submit" className="contact-form__button" value="Send">
-          SEND
+        {t('contact.button')}
         </button>
       </form>
       )}

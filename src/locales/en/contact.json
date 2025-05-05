@@ -5,7 +5,11 @@
         "name" : "Your Name", 
         "your-email" : "Your Email", 
         "phone" : "Your phone number", 
-        "message" : "message"
+        "message" : "message", 
+        "button" : "SEND",
+        "confirmation" : "Message sent!", 
+        "text1" : "Your message has landed safely in my inbox.", 
+        "text2" : "I usually reply within 2 business days. Talk soon!"
     }, 
     "header" : {
         "projects" : "Projects", 
