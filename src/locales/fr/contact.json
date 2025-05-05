@@ -2,10 +2,15 @@
     "contact" : {
         "title" : "CONTACTEZ-MOI!", 
         "email" : "vanessa.lebrun.1@gmail.com", 
-        "name" : "Votre nom", 
-        "your-email" : "Votre courriel", 
-        "phone" : "Votre numéro de téléphone", 
-        "message" : "Message"
+        "name" : "Nom Complet", 
+        "your-email" : "Adresse courriel", 
+        "phone" : "Numéro de téléphone", 
+        "message" : "Message",
+        "button" : "Envoyer",
+        "confirmation" : "Message bien reçu!", 
+        "text1" : "Votre message est bien arrivé à destination.", 
+        "text2" : "Je m'efforce de répondre à tous mes courriels dans une période de 2 jours ouvrables. On se parle bientôt!"
+       
     }, 
     "header" : {
         "projects" : "Projets", 
