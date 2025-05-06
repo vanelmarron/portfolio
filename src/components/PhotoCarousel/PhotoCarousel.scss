@@ -3,25 +3,26 @@
 @use "../../styles/partials/typography.scss" as *;
 
 .nutshell {
-  margin-top: 5rem;
+  margin-top: 7rem;
 
   &__description {
     @include body-small;
       color: darken($secondary-color, 10%);
-
-      @include tablet {
-        width: 70%;
-      }
+      margin-top: 1rem;
   }
 }
 .carousel {
     @include flex-center;
-    margin-top: 3rem;
+    margin-top: 0rem;
     margin-bottom: 5rem;
     overflow: hidden;
     width: 100%;
     height: 25rem;
     position: relative;
+
+    @include tablet {
+      margin-top: 3rem;
+    }
   }
   
   .carousel__track {
