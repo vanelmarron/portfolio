@@ -63,6 +63,7 @@ function PhotoCarousel() {
       <p className="nutshell__description">
       {t('not-coding.text')} 
       </p>
+      <p className="nutshell__description">{t('not-coding.text2')}</p>
       <div className="carousel">
         <motion.div
           className="carousel__track"
