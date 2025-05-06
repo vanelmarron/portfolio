@@ -6,16 +6,21 @@
     background-color: $background-color;
     padding: 4rem 0 0 0;
     color: $text-color;
-    height: 95vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
     gap: 8rem;
 
+    @include tablet {
+        height: 100vh;
+    }
+
     &__title-container {
         display: flex;
         gap: 2rem;
+        bottom: 75%;
     }
 
     &__content {
