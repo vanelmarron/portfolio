@@ -3,10 +3,10 @@
 @use "../../styles/partials/typography.scss" as *;
 
 .nutshell {
-  margin-top: 7rem;
+  margin-top: 5rem;
 
   &__description {
-    @include body-small;
+    @include body-typo;
       color: darken($secondary-color, 10%);
       margin-top: 1rem;
   }
