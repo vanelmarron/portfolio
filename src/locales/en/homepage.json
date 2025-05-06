@@ -4,6 +4,7 @@
         "title-flipped" : "Web Developer.",
         "text1" : "I'm a web developer based in Vancouver, Beautiful British Columbia.", 
         "text2" : "I build full-stack applications and websites that will help you bridge the gap between your business and your customers.", 
+        "text3" : "With a background in marketing, I create seamless, user-centered experiences that stay true to your brand—online and in person.", 
         "button" : "Let’s turn your ideas into code!"
     },
     "toolbox" : {
@@ -66,13 +67,13 @@
             "item3-reg" : "Problem Solver", 
             "item4-bold" : "Bilingual", 
             "item4-reg" : "EN | FR", 
-            "tagline" : "Crafting Beautiful, Responsive, and Purposeful Designs", 
-            "coding1" : " I'm an active and outdoorsy person who has recently discovered a passion for coding.", 
-            "coding2" : " To me, it's a form of art—one that I use to craft visually appealing, responsive, and user-friendly digital experiences. I bring creativity and attention to detail to every project, ensuring the final product truly reflects my clients' vision.", 
+            "tagline" : "My Mission: Crafting Beautiful, Responsive, and Purposeful Designs", 
+            "coding1" : "I approach web development as both a creative and strategic discipline.", 
+            "coding2" : "I design digital experiences that are visually polished, responsive, and user-centered—paying close attention to detail to ensure each project truly reflects my clients’ vision.", 
             "approach": "Visit my GitHub" 
         }, 
         "not-coding" : {
-            "title" : "When I'm not coding", 
-            "text" : "A picture is worth a thousand words."
+            "title" : "A picture is worth a thousand words.", 
+            "text" : "Endurance, perseverance, and the spirit of adventure shape my mindset: goal-oriented, grounded in discipline, and always ready to tackle the next challenge."
         }
 }

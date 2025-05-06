@@ -3,12 +3,15 @@
 @use "../../styles/partials/typography.scss" as *;
 
 .nutshell {
-  margin-top: 7rem;
+  margin-top: 5rem;
 
   &__description {
     @include body-small;
       color: darken($secondary-color, 10%);
-      text-transform: uppercase;
+
+      @include tablet {
+        width: 70%;
+      }
   }
 }
 .carousel {
