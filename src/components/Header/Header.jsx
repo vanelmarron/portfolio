@@ -71,8 +71,8 @@ function Header({ locales }) {
               <p className="header__text">{t('header.resume')}</p>
             </li>
           </Link>
-          <li className="header__item">
-            <img src={languageIcon} alt="Resume" className="header__icon" />
+          <li className="header__item header__item--tablet">
+            <img src={languageIcon} alt="Language" className="header__icon" />
             <ul className="language__list">
               {Object.keys(locales).map((locale) => (
                 <li key={locale} className={`language__item ${

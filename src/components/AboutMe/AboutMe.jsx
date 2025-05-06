@@ -7,7 +7,6 @@ import i18n from "i18next";
 
 import PhotoCarousel from "../PhotoCarousel/PhotoCarousel";
 import codingApproach from "../../assets/images/coding-approach.png";
-import codingApproachFR from "../../assets/images/coding-approach-fr.png";
 import githubIcon from "../../assets/images/github.svg";
 
 function AboutMe() {
@@ -71,7 +70,7 @@ function AboutMe() {
       >
         <img
           className="about__approach"
-          src={i18n.language === "fr" ? codingApproachFR : codingApproach}
+          src={codingApproach}
           alt="Coding Approach"
         />
         {hover && (

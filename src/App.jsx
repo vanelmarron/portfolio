@@ -15,7 +15,7 @@ const locales = {
 }
 
 function App() {
-  const { t, i18n } = useTranslation();
+ 
   return (
     <BrowserRouter>
       <Header locales={locales} />
@@ -24,7 +24,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />}/>
         <Route path="/resume" element={<ResumePage />} />
       </Routes>
-      <Footer />
+      <Footer locales={locales} />
     </BrowserRouter>
   );
 }
