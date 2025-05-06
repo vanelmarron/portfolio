@@ -47,7 +47,10 @@ function Hero() {
       <div className="hero__content">
         <p className="hero__text">
           {t('hero.text1')} 
-          </p><p className="hero__text">{t('hero.text2')}
+          </p>
+          <p className="hero__text">{t('hero.text2')}
+        </p>
+        <p className="hero__text">{t('hero.text3')}
         </p>
         <Link to="/contact">
         <button className="hero__button">

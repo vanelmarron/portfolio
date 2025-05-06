@@ -41,9 +41,66 @@
         font-size: 1.25rem;
         color: $text-color;
         cursor: pointer;
+
+        &--mobile {
+            @include tablet {
+                display: none;
+            }
+        }
     }
 
     &__icon {
         height: 1rem;
+    }
+}
+
+.mobile-lang {
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+  
+      @include tablet {
+       display: none;
+      }
+  
+      &:hover {
+        text-decoration: underline $primary-color;
+      }
+  
+      &--active {
+        text-decoration: underline $primary-color;
+      }
+    }
+  
+    &__button {
+      @include flex-center;
+      display: contents;
+      font-family: "Bebas";
+      font-size: 1.25rem;
+      color: $text-color;
+      background-color: $background-color;
+      text-decoration: none;
+      margin-top: 0;
+      padding: 0;
+  
+      &:hover {
+        background-color: $background-color;
+        color: $primary-color;
+        text-decoration: underline $primary-color;
+      }
+      &--active {
+          color: $primary-color;
+          text-decoration: underline $primary-color;
+          font-weight: bold;
+        }
     }
 }
