@@ -10,7 +10,7 @@ function Experience() {
         <h2 className="experience__role">
          {t('resume.experience.steed-marketing.title')}
         </h2>
-        <h3 className="experience__employer">{t('resume.experience.steed-marketingv.employer')}</h3>
+        <h3 className="experience__employer">{t('resume.experience.steed-marketing.employer')}</h3>
         <h4 className="experience__timeframe">{t('resume.experience.steed-marketing.date')}</h4>
         <ul className="experience__achievements">
           <li className="experience__item">
