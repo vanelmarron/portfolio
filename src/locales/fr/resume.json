@@ -3,7 +3,20 @@
         "title" : "CURRICULUM VITAE", 
         "experience" : {
             "title" :"Expérience",
-            "webdev" : {
+            "steed-marketing": {
+    "title": "Coordonnatrice marketing",
+    "employer": "Steed Cycles",
+    "date": "MAI 2025 - MAINTENANT, NORTH VANCOUVER, C.-B.",
+    "experience1": "Planification et exécution de campagnes marketing numériques par courriel, sur les médias sociaux et le web, en utilisant Klaviyo et Shopify pour optimiser la segmentation, la performance et les revenus.",
+    "experience2": "Création et gestion de flux, de tests A/B et de stratégies de génération de prospects à partir des données Shopify et des analyses clients pour accroître l’engagement et la fidélisation.",
+    "experience3": "Planification et organisation d’événements communautaires et d’activations de marque afin d’accroître la présence locale, de renforcer les partenariats et de stimuler l’engagement des clients.",
+    "experience4": "Collaboration avec les équipes de ventes, web et achats pour harmoniser les lancements de produits et les promotions avec les tendances des données et les objectifs d’affaires.",
+    "skill1": "Création de contenu",
+    "skill2": "Marketing par courriel",
+    "skill3": "Médias sociaux",
+    "skill4": "Shopify/Klaviyo"
+},
+"webdev" : {
                 "title" : "Développeuse Web & Spécialiste Marketing", 
                 "employer" : "Freelance", 
                 "date" : "MARS 2025 - MAINTENANT, BURNABY, C.-B.", 
