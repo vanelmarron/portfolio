@@ -3,6 +3,19 @@
         "title" : "RESUME", 
         "experience" : {
             "title" :"Experience",
+             "steed-marketing" : {
+                "title" : "Marketing Coordinator", 
+                "employer" : "Steed Cycles", 
+                "date" : "MAY 2025 - NOW, NORTH VANCOUVER, BC", 
+                "experience1" : "Planned and executed digital marketing campaigns across email, social, and web using Klaviyo and Shopify to optimize segmentation, performance, and revenue.", 
+                "experience2" : "Built and managed flows, A/B tests, and lead-gen tactics using Shopify data and customer insights to boost engagement and retention.", 
+                "experience3" : " Planned and hosted community events and brand activations to build local presence, strengthen partnerships, and drive customer engagement.", 
+                "experience4" : "Partnered with sales, web, and purchasing teams to align product launches and promotions with data trends and business goals.",
+                "skill1" : "Content Creation", 
+                "skill2" : "Email Marketing", 
+                "skill3" : "Social Media", 
+                "skill4" : "Shopify/Klaviyo"
+            }, 
             "webdev" : {
                 "title" : "Web Developer & Marketing Specialist", 
                 "employer" : "Freelance", 
