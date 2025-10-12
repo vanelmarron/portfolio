@@ -8,6 +8,33 @@ function Experience() {
     <section className="experience">
       <article className="experience__position">
         <h2 className="experience__role">
+         {t('resume.experience.steed-marketing.title')}
+        </h2>
+        <h3 className="experience__employer">{t('resume.experience.steed-marketingv.employer')}</h3>
+        <h4 className="experience__timeframe">{t('resume.experience.steed-marketing.date')}</h4>
+        <ul className="experience__achievements">
+          <li className="experience__item">
+          {t('resume.experience.steed-marketing.experience1')}
+          </li>
+          <li className="experience__item">
+          {t('resume.experience.steed-marketing.experience2')}
+          </li>
+          <li className="experience__item">
+          {t('resume.experience.steed-marketing.experience3')}
+          </li>
+          <li className="experience__item">
+          {t('resume.experience.steed-marketing.experience4')}
+          </li>
+        </ul>
+        <ul className="experience__skills-list">
+          <li className="experience__skills-item">{t('resume.experience.steed-marketing.skill1')}</li>
+          <li className="experience__skills-item">{t('resume.experience.steed-marketing.skill2')}</li>
+          <li className="experience__skills-item">{t('resume.experience.steed-marketing.skill3')}</li>
+          <li className="experience__skills-item">{t('resume.experience.steed-marketing.skill4')}</li>
+        </ul>
+      </article>
+      <article className="experience__position">
+        <h2 className="experience__role">
          {t('resume.experience.webdev.title')}
         </h2>
         <h3 className="experience__employer">{t('resume.experience.webdev.employer')}</h3>
